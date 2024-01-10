@@ -1,0 +1,173 @@
+.footer {
+    background-color: var(--footer_bg);
+    color: var(--footer_text_color);
+    flex-shrink: 0;
+    padding-top: 12px;
+    padding-bottom: 24px;
+    @media(min-width: $xs) {
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+    @media(min-width: $sm) {
+        padding-top: 30px;
+        padding-bottom: 40px;
+    }
+    @media(min-width: $md) {
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+    @media(min-width: $hd) {
+        padding-top: 70px;
+        padding-bottom: 40px;
+    }
+
+    &__inner {
+        @media(min-width: $sm) {
+            padding-left: 40px;
+            padding-right: 40px;
+        }
+        @media(min-width: $md) {
+            padding-left: var(--container_padding);
+            padding-right: var(--container_padding);
+        }
+        @media(min-width: $hd) {
+            align-items: flex-start;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+    }
+
+    &__logo {
+        display: block;
+        margin-bottom: 45px;
+        margin-left: auto;
+        margin-right: auto;
+        max-width: 300px;
+        @media(min-width: $xs) {
+            margin-bottom: 35px;
+        }
+        @media(min-width: $sm) {
+            max-width: 316px;
+            margin-left: 0;
+            margin-right: 0;
+            margin-bottom: 55px;
+        }
+        @media(min-width: $md) {
+            margin-bottom: 60px;
+        }
+        @media(min-width: $hd) {
+            margin-bottom: 0;
+            max-width: 185px;
+        }
+    }
+
+    &__menu {
+        @media(min-width: $xs) {
+            display: grid;
+            grid-template-columns: auto 180px;
+        }
+        @media(min-width: $sm) {
+            padding-left: 20px;
+            padding-right: 20px;
+        }
+        @media(min-width: $md) {
+            grid-template-columns: repeat(4, 1fr);
+            padding-left: 0;
+            padding-right: 0;
+        }
+        @media(min-width: $hd) {
+            grid-template-columns: repeat(4, 1fr);
+            max-width: 1200px;
+            padding-top: 25px;
+            width: 70%;
+        }
+    }
+
+    &__bottom {
+        align-items: center;
+        display: flex;
+        flex-wrap: wrap;
+        font-size: 10px;
+        justify-content: space-between;
+        line-height: 1.4;
+        width: 100%;
+        @media(min-width: $sm) {
+            margin-top: 40px;
+        }
+        @media(min-width: $md) {
+            margin-top: 0;
+        }
+        @media(min-width: $fhd) {
+            font-size: 14px;
+        }
+
+        p {
+            margin-bottom: 0;
+        }
+
+        a {
+            color: var(--footer_text_color);
+            text-decoration: none;
+            @include hover {
+                text-decoration: underline;
+            }
+        }
+    }
+}
+
+.footer-menu {
+    @include list-reset;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.4;
+    margin-bottom: 40px;
+    @media(min-width: $xs) {
+        margin-bottom: 50px;
+    }
+    @media(min-width: $sm) {
+        margin-bottom: 60px;
+    }
+    @media(min-width: $md) {
+        font-weight: 400;
+        padding-right: 30px;
+        margin-bottom: 95px;
+    }
+    @media(min-width: $fhd) {
+        font-size: 18px;
+        margin-bottom: 150px;
+    }
+
+    &__title {
+        font-size: 20px;
+        font-weight: 600;
+        margin-bottom: 20px;
+        text-transform: uppercase;
+        @media(min-width: $sm) {
+            margin-bottom: 25px;
+        }
+        @media(min-width: $md) {
+            margin-bottom: 30px;
+        }
+        @media(min-width: $fhd) {
+            margin-bottom: 35px;
+        }
+    }
+
+    &__item {
+        &:not(:last-child) {
+            margin-bottom: 16px;
+            @media(min-width: $md) {
+                margin-bottom: 20px;
+            }
+        }
+    }
+
+    a {
+        color: var(--footer_text_color);
+        text-decoration: none;
+        @include hover {
+            text-decoration: underline;
+        }
+    }
+}

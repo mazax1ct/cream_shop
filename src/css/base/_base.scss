@@ -1,0 +1,97 @@
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+}
+
+body,
+html {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.page {
+    background-color: #fff;
+    color: #000;
+    display: flex;
+    flex-direction: column;
+    font-size: 15px;
+    font-family: var(--main_font_family);
+    font-weight: 400;
+    line-height: 1.6;
+
+    &.is-overflow {
+        overflow: hidden;
+    }
+
+    &__content {
+        flex: 1 0 auto;
+        padding-bottom: 120px;
+        @media(min-width: $sm) {
+            padding-bottom: 180px;
+        }
+        @media(min-width: $fhd) {
+            padding-bottom: 260px;
+        }
+    }
+}
+
+.container {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1808px;
+    padding-left: var(--container_padding);
+    padding-right: var(--container_padding);
+}
+
+a {
+    color: #000;
+}
+
+img {
+    height: auto;
+    max-width: 100%;
+}
+
+*:focus {
+    outline: none;
+}
+
+button,
+input,
+textarea {
+    font-size: inherit;
+    font-family: inherit;
+    line-height: inherit;
+}
+
+p {
+    margin-top: 0;
+}
+
+hr {
+    margin: 40px 0;
+    padding: 0;
+    height: 0;
+    border: none;
+    border-top: 1px dashed rgba(#fff, 0.2);
+    @media(min-width: $hd) {
+        margin-top: 32px;
+        margin-bottom: 32px;
+    }
+
+    &:last-child {
+        margin-bottom: 0;
+        @media(min-width: $hd) {
+            margin-bottom: 0;
+        }
+    }
+
+    &:first-child {
+        margin-top: 0;
+        @media(min-width: $hd) {
+            margin-top: 0;
+        }
+    }
+}

@@ -1,0 +1,24 @@
+$xs: 420px;
+$sm: 768px;
+$md: 1024px;
+$hd: 1200px;
+$lg: 1400px;
+$fhd: 1900px;
+
+:root {
+    --black: #000;
+    --button_bg: #030303;
+    --footer_bg: #F1F2F5;
+    --footer_text_color: #252525;
+    --main_font_family: 'Inter', Arial, sans-serif;
+    --container_padding: 20px;
+    @media(min-width: $xs) {
+        --container_padding: 24px;
+    }
+    @media(min-width: $sm) {
+        --container_padding: 30px;
+    }
+    @media(min-width: $md) {
+        --container_padding: 24px;
+    }
+}
