@@ -1,0 +1,56 @@
+.banner_2 {
+    display: flex;
+    flex-wrap: wrap;
+    --gap: 20px;
+    gap: var(--gap);
+    @media(min-width: $fhd) {
+        --gap: 40px;
+    }
+
+    &__item {
+        color: #fff;
+        display: block;
+        font-size: 80px;
+        position: relative;
+        width: 100%;
+        z-index: auto;
+        @media(min-width: $sm) {
+            width: calc(100% / 2 - var(--gap) / 2);
+        }
+
+        img {
+            display: block;
+            width: 100%;
+        }
+        @include hover {
+            &::after,
+            .banner_2__item-title {
+                opacity: 1;
+            }
+        }
+
+        &::after {
+            background-color: rgba(0,0,0,0.6);
+            bottom: 0;
+            content: '';
+            left: 0;
+            opacity: 0;
+            position: absolute;
+            right: 0;
+            top: 0;
+            transition: opacity 0.3s;
+            z-index: 1;
+        }
+    }
+
+    &__item-title {
+        left: 50%;
+        opacity: 0;
+        position: absolute;
+        top: 50%;
+        transition: opacity 0.3s;
+        transform: translate(-50%, -50%);
+        text-decoration: underline;
+        z-index: 2;
+    }
+}

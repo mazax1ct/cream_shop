@@ -10,7 +10,6 @@
     }
 
     &.is-dark {
-        .header-search__submit,
         .header__button,
         .header__link,
         .header__logo {
@@ -25,37 +24,62 @@
             }
         }
 
+        .header-search__submit {
+            svg {
+                @media(min-width: $hd) {
+                    fill: #fff;
+                }
+            }
+        }
+
         .header-search__input {
-            border-bottom-color: #fff;
-            color: #fff;
+            @media(min-width: $hd) {
+                border-bottom-color: #fff;
+                color: #fff;
+            }
 
             &::-webkit-input-placeholder {
-                color: #fff;
-                opacity: 1;
+                @media(min-width: $hd) {
+                    color: #fff;
+                    opacity: 1;
+                }
             }
 
             &::-moz-placeholder {
-                color: #fff;
-                opacity: 1;
+                @media(min-width: $hd) {
+                    color: #fff;
+                    opacity: 1;
+                }
             }
 
             &:-ms-input-placeholder {
-                color: #fff;
-                opacity: 1;
+                @media(min-width: $hd) {
+                    color: #fff;
+                    opacity: 1;
+                }
             }
 
             &:focus {
-                border-bottom-color: #fff;
+                @media(min-width: $hd) {
+                    border-bottom-color: #fff;
+                }
             }
+        }
+
+        .cart-qnt {
+            background-color: #fff;
+            color: var(--black);
         }
     }
 
     &.is-out {
+        box-shadow: none !important;
         transform: translateY(-100%);
     }
 
     &.is-scrolled {
         background-color: #fff;
+        box-shadow: 0 3px 3px -2px rgba(0,0,0, 0.15);
         position: fixed;
         padding-top: 10px;
         padding-bottom: 10px;
@@ -98,6 +122,11 @@
             &:focus {
                 border-bottom-color: var(--black);
             }
+        }
+
+        .cart-qnt {
+            background-color: var(--black);
+            color: #fff;
         }
     }
 
@@ -213,6 +242,32 @@
     }
 }
 
+.cart-qnt {
+    align-items: center;
+    aspect-ratio: 1;
+    border-radius: 50%;
+    background-color: var(--black);
+    color: #fff;
+    display: flex;
+    font-size: 8px;
+    min-height: 12px;
+    justify-content: center;
+    line-height: 1;
+    left: 100%;
+    min-width: 12px;
+    position: absolute;
+    padding-left: 2px;
+    padding-right: 2px;
+    top: 100%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+    @media(min-width: $sm) {
+        font-size: 9px;
+        min-width: 18px;
+        min-height: 18px;
+    }
+}
+
 .header-search {
     @media(min-width: $hd) {
         margin-left: auto;
@@ -262,10 +317,13 @@
         background-color: transparent;
         border: none;
         border-bottom: 1px solid var(--input_border_default);
+        display: block;
+        font-size: 14px;
         height: 32px;
         padding: 0 40px 0 0;
         width: 100%;
         @media(min-width: $hd) {
+            border-bottom-color: var(--input_border_default);
             padding-right: 0;
             width: calc(100% - 35px);
         }
@@ -273,20 +331,32 @@
         &::-webkit-input-placeholder {
             color: var(--placeholder_color);
             opacity: 1;
+            @media(min-width: $hd) {
+                color: var(--placeholder_color);
+            }
         }
 
         &::-moz-placeholder {
             color: var(--placeholder_color);
             opacity: 1;
+            @media(min-width: $hd) {
+                color: var(--placeholder_color);
+            }
         }
 
         &:-ms-input-placeholder {
             color: var(--placeholder_color);
             opacity: 1;
+            @media(min-width: $hd) {
+                color: var(--placeholder_color);
+            }
         }
 
         &:focus {
             border-bottom-color: var(--black);
+            @media(min-width: $hd) {
+                border-bottom-color: var(--black);
+            }
         }
     }
 
@@ -312,6 +382,9 @@
             @media(min-width: $sm) {
                 height: 24px;
                 width: 24px;
+            }
+            @media(min-width: $hd) {
+                fill: var(--black);
             }
         }
     }

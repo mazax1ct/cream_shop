@@ -1,5 +1,6 @@
 .banner {
     &__slide {
+        display: block;
         @media(min-width: $md) {
             display: flex;
         }
@@ -7,6 +8,12 @@
         img,
         picture {
             display: block;
+        }
+
+        picture {
+            @media(min-width: $md) {
+                width: 50%;
+            }
         }
 
         img {
