@@ -1,6 +1,6 @@
 .footer {
     background-color: var(--footer_bg);
-    color: var(--footer_text_color);
+    color: var(--black);
     flex-shrink: 0;
     padding-top: 12px;
     padding-bottom: 24px;
@@ -107,7 +107,6 @@
         }
 
         a {
-            color: var(--footer_text_color);
             text-decoration: none;
             @include hover {
                 text-decoration: underline;
@@ -164,7 +163,6 @@
     }
 
     a {
-        color: var(--footer_text_color);
         text-decoration: none;
         @include hover {
             text-decoration: underline;

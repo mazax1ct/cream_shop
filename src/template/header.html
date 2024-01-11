@@ -39,14 +39,16 @@
                 </svg>
             </button>
 
-            <form class="header-search__form" action="">
-                <input class="header-search__input" type="text">
-                <button class="header-search__submit" type="submit" title="Найти">
-                    <svg aria-hidden="true">
-                        <use xlink:href="images/sprite.svg#search" />
-                    </svg>
-                </button>
-            </form>
+            <div class="header-search__form-block">
+                <form class="header-search__form" action="">
+                    <input class="header-search__input" type="text" value="" name="q" placeholder="Найти товар" autocomplete="off">
+                    <button class="header-search__submit" type="submit" title="Найти">
+                        <svg aria-hidden="true">
+                            <use xlink:href="images/sprite.svg#search" />
+                        </svg>
+                    </button>
+                </form>
+            </div>
         </div>
 
         <div class="header__logo" href="main.html" title="На главную">

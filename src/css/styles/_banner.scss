@@ -1,0 +1,28 @@
+.banner {
+    &__slide {
+        @media(min-width: $md) {
+            display: flex;
+        }
+
+        img,
+        picture {
+            display: block;
+        }
+
+        img {
+            width: 100%;
+        }
+    }
+
+    .swiper-pagination-bullet {
+        background-color: transparent;
+        border: 1px solid var(--black);
+        height: 10px;
+        opacity: 1;
+        width: 10px;
+
+        &.swiper-pagination-bullet-active {
+            background-color: var(--black);
+        }
+    }
+}

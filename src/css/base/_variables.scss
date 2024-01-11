@@ -6,10 +6,11 @@ $lg: 1400px;
 $fhd: 1900px;
 
 :root {
-    --black: #000;
+    --black: #2F2F2F;
     --button_bg: #030303;
     --footer_bg: #F1F2F5;
-    --footer_text_color: #252525;
+    --input_border_default: rgba(0,0,0,0.3);
+    --placeholder_color: rgba(0,0,0,0.5);
     --main_font_family: 'Inter', Arial, sans-serif;
     --container_padding: 20px;
     @media(min-width: $xs) {

@@ -13,7 +13,7 @@ html {
 
 .page {
     background-color: #fff;
-    color: #000;
+    color: var(--black);
     display: flex;
     flex-direction: column;
     font-size: 15px;
@@ -25,13 +25,21 @@ html {
         overflow: hidden;
     }
 
+    &--no_banner {
+        .page__content {
+            padding-top: 0 !important;
+        }
+    }
+
     &__content {
         flex: 1 0 auto;
+        padding-top: 135px;
         padding-bottom: 120px;
         @media(min-width: $sm) {
             padding-bottom: 180px;
         }
         @media(min-width: $fhd) {
+            padding-top: 200px;
             padding-bottom: 260px;
         }
     }
@@ -46,7 +54,7 @@ html {
 }
 
 a {
-    color: #000;
+    color: var(--black);
 }
 
 img {
@@ -61,6 +69,7 @@ img {
 button,
 input,
 textarea {
+    color: inherit;
     font-size: inherit;
     font-family: inherit;
     line-height: inherit;
