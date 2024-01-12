@@ -19,7 +19,8 @@ html {
     font-size: 14px;
     font-family: var(--main_font_family);
     font-weight: 400;
-    line-height: 1.62;
+    line-height: 1.4;
+    overflow-x: hidden;
     @media(min-width: $sm) {
         font-size: 18px;
     }
@@ -39,11 +40,68 @@ html {
         padding-top: 135px;
         padding-bottom: 120px;
         @media(min-width: $sm) {
+            padding-top: 200px;
             padding-bottom: 180px;
         }
         @media(min-width: $fhd) {
-            padding-top: 200px;
+            padding-top: 170px;
             padding-bottom: 260px;
+        }
+    }
+
+    &__top {
+        display: flex;
+        flex-wrap: wrap;
+        margin-bottom: 30px;
+        position: relative;
+        padding-bottom: 20px;
+        z-index: auto;
+        @media(min-width: $sm) {
+            margin-bottom: 40px;
+            padding-bottom: 40px;
+        }
+        @media(min-width: $fhd) {
+            margin-bottom: 70px;
+            padding-bottom: 70px;
+        }
+
+        &::after {
+            border-bottom: 0.5px solid var(--black);
+            content: '';
+            left: 50%;
+            position: absolute;
+            top: 100%;
+            transform: translateX(-50%);
+            width: 100vw;
+        }
+
+        .breadcrumbs {
+            @media(min-width: $hd) {
+                margin-bottom: 120px;
+                order: -1;
+                width: 100%;
+            }
+        }
+    }
+
+    &__title {
+        font-size: 36px;
+        font-weight: 500;
+        line-height: 1;
+        margin-top: 0;
+        margin-bottom: 30px;
+        text-transform: uppercase;
+        width: 100%;
+        @media(min-width: $sm) {
+            font-size: 60px;
+            margin-bottom: 50px;
+        }
+        @media(min-width: $hd) {
+            margin-bottom: 0;
+            width: auto;
+        }
+        @media(min-width: $fhd) {
+            font-size: 80px;
         }
     }
 }

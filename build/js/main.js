@@ -32,7 +32,7 @@ $(document).ready(function() {
   resize_scroll();
 
   //навешивание класса переопределения цвеа текста на шапку
-  if($('.js-banner').length){
+  if($('.js-banner').length) {
     if($('.swiper-slide-active').hasClass('is-dark')) {
       $('.header').addClass('is-dark');
     }else{
@@ -59,23 +59,25 @@ $(document).on('click', '.js-main-menu-closer', function () {
 });
 
 //слайдер баннера на главной
-const bannerSlider = new Swiper('.js-banner', {
-  loop: true,
-  autoplay: {
-    delay: 5000,
-  },
-  pagination: {
-    el: '.swiper-pagination',
-  }
-});
+if($('.js-banner').length) {
+  const bannerSlider = new Swiper('.js-banner', {
+    loop: true,
+    autoplay: {
+      delay: 5000,
+    },
+    pagination: {
+      el: '.swiper-pagination',
+    }
+  });
 
-bannerSlider.on('transitionEnd', function () {
-  if($('.swiper-slide-active').hasClass('is-dark')) {
-    $('.header').addClass('is-dark');
-  }else{
-    $('.header').removeClass('is-dark');
-  }
-});
+  bannerSlider.on('transitionEnd', function () {
+    if($('.swiper-slide-active').hasClass('is-dark')) {
+      $('.header').addClass('is-dark');
+    }else{
+      $('.header').removeClass('is-dark');
+    }
+  });
+}
 
 //открытие поиска
 $(document).on('click', '.js-search-opener', function () {
