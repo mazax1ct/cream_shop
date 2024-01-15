@@ -56,4 +56,7 @@
     <symbol id="chevron_right" viewBox="0 0 24 24">
       <path d="M8.59 16.59L10 18L16 12L10 6L8.59 7.41L13.17 12L8.59 16.59Z"/>
     </symbol>
+    <symbol id="chevron_down" viewBox="0 0 24 24">
+      <path d="M7.41 8.59L6 10L12 16L18 10L16.59 8.59L12 13.17L7.41 8.59Z"/>
+    </symbol>
 </svg>

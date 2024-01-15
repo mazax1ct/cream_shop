@@ -94,3 +94,17 @@ $(document).on('click', '.js-search-opener', function () {
 
   return false;
 });
+
+//тогглер фильтра
+$(document).on('click', '.js-filter-toggler', function () {
+  $(this).toggleClass('is-active');
+  $('.filter').slideToggle();
+  return false;
+});
+
+//тогглер раздела фильтра
+$(document).on('click', '.js-filter-section-toggler', function () {
+  $(this).toggleClass('is-active');
+  $(this).closest('.filter__section').find('.filter__section-inner').slideToggle();
+  return false;
+});

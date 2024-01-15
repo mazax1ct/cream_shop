@@ -24,7 +24,7 @@
         <main>
             <div class="container">
                 <section>
-                    <div class="page__top">
+                    <div class="catalog-top">
                         <h1 class="page__title">Collection</h1>
 
                         <ul class="breadcrumbs">
@@ -32,60 +32,14 @@
                             <li class="breadcrumbs__item">Collection</li>
                         </ul>
 
-                        <button class="js-filter-toggler filter-toggler" type="button">
-                            <svg aria-hidden="true">
-                                <use xlink:href="images/sprite.svg#filter" />
-                            </svg>
-                            Filters
-                        </button>
+                        //= template/filter.html
                     </div>
 
                     <div class="catalog-list catalog-list--simple">
                         //= template/catalog_list.html
                     </div>
 
-                    <div class="pagination">
-                        <div class="pager">
-                            <ul class="pager__list">
-                                <li class="pager__item">
-                                    <span class="pager__link disabled">
-                                        <svg aria-hidden="true">
-                                            <use xlink:href="images/sprite.svg#chevron_left" />
-                                        </svg>
-                                    </span>
-                                </li>
-                                <li class="pager__item">
-                                    <span class="pager__link">1</span>
-                                </li>
-                                <li class="pager__item">
-                                    <a class="pager__link" href="#">2</a>
-                                </li>
-                                <li class="pager__item">
-                                    <a class="pager__link" href="#">3</a>
-                                </li>
-                                <li class="pager__item">
-                                    <a class="pager__link" href="#">...</a>
-                                </li>
-                                <li class="pager__item">
-                                    <a class="pager__link" href="#">10</a>
-                                </li>
-                                <li class="pager__item">
-                                    <a class="pager__link" href="#" title="Следующая страница">
-                                        <svg aria-hidden="true">
-                                            <use xlink:href="images/sprite.svg#chevron_right" />
-                                        </svg>
-                                    </a>
-                                </li>
-                            </ul>
-
-                            <button class="button pager__next" type="button">Показать еще</button>
-                        </div>
-                        <div class="pagination__nav">
-                            <a href="#">NEW COLLECTION</a>
-                            <a href="#">ACCESSORIES</a>
-                        </div>
-                    </div>
-
+                    //= template/pagination.html
                 </section>
             </div>
         </main>

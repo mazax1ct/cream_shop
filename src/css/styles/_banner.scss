@@ -1,4 +1,12 @@
 .banner {
+    margin-bottom: 120px;
+    @media(min-width: $sm) {
+        margin-bottom: 160px;
+    }
+    @media(min-width: $fhd) {
+        margin-bottom: 260px;
+    }
+
     &__slide {
         display: block;
         @media(min-width: $md) {

@@ -3,8 +3,13 @@
     flex-wrap: wrap;
     --gap: 20px;
     gap: var(--gap);
+    margin-bottom: 120px;
+    @media(min-width: $sm) {
+        margin-bottom: 160px;
+    }
     @media(min-width: $fhd) {
         --gap: 40px;
+        margin-bottom: 260px;
     }
 
     &__item {
