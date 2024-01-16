@@ -1,0 +1,513 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+
+    <title>CREAM</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="format-detection" content="telephone=no">
+
+    //= template/favicon.html
+
+    //= template/fonts_preload.html
+
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="plugins_css/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="plugins_css/jquery.fancybox.css" />
+</head>
+
+<body class="page">
+    <div class="page__content">
+        //= template/header.html
+
+        <main>
+            <div class="container">
+                <div class="detail">
+                    <ul class="breadcrumbs">
+                        <li class="breadcrumbs__item"><a class="breadcrumbs__link" href="#">Каталог</a></li>
+                        <li class="breadcrumbs__item"><a class="breadcrumbs__link" href="#">New</a></li>
+                        <li class="breadcrumbs__item">Куртка Anteater DownJacket</li>
+                    </ul>
+
+                    <div class="detail__inner">
+                        <div class="detail__images">
+                            <button class="detail__fav is-added" type="button" title="Убрать из избранного">
+                                <svg aria-hidden="true">
+                                    <use xlink:href="images/sprite.svg#favorite_stroke" />
+                                </svg>
+                            </button>
+
+                            <div class="js-detail swiper">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide">
+                                        <a href="images/content/detail/img_1@2x.jpg" data-fancybox="images">
+                                            <img src="images/content/detail/img_1.jpg" srcset="images/content/detail/img_1@2x.jpg" alt="">
+                                        </a>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <a href="images/content/detail/img_2@2x.jpg" data-fancybox="images">
+                                            <img src="images/content/detail/img_2.jpg" srcset="images/content/detail/img_2@2x.jpg" alt="">
+                                        </a>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <a href="images/content/detail/img_3@2x.jpg" data-fancybox="images">
+                                            <img src="images/content/detail/img_3.jpg" srcset="images/content/detail/img_3@2x.jpg" alt="">
+                                        </a>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <a href="images/content/detail/img_4@2x.jpg" data-fancybox="images">
+                                            <img src="images/content/detail/img_4.jpg" srcset="images/content/detail/img_4@2x.jpg" alt="">
+                                        </a>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <a href="images/content/detail/img_5@2x.jpg" data-fancybox="images">
+                                            <img src="images/content/detail/img_5.jpg" srcset="images/content/detail/img_5@2x.jpg" alt="">
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="swiper-pagination"></div>
+                            </div>
+                        </div>
+
+                        <div class="detail__info">
+                            <p class="detail__badge">NEW</p>
+
+                            <div class="detail__price-block">
+                                <span class="detail__price">7899 rub</span>
+                                <span class="detail__old-price"><s>9899</s> rub</span>
+                            </div>
+
+                            <p class="detail__type">Куртка</p>
+
+                            <h1 class="detail__title">Anteater<br> DownJacket</h1>
+
+                            <p class="detail__articul"><span>Артикул:</span> Downjacket-Combo-Grey</p>
+
+                            <div class="detail__sizes-top">
+                                <span>SIZE</span>
+                                <a href="#" data-fancybox="sizes" data-src="#sizes">Гид по размерам</a>
+                            </div>
+
+                            <div id="sizes" class="sizes-popup" style="display:none">
+                                <p class="sizes-popup__title">РАЗМЕРНАЯ СЕТКА, СМ</p>
+                                <div class="responsive-table">
+                                    <table class="table">
+                                        <thead>
+                                            <tr>
+                                                <th>SIZE</th>
+                                                <th>ГРУДЬ</th>
+                                                <th>ТАЛИЯ</th>
+                                                <th>БЁДРА</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>XS</td>
+                                                <td>64-68</td>
+                                                <td>54-59</td>
+                                                <td>66-73</td>
+                                            </tr>
+                                            <tr>
+                                                <td>S</td>
+                                                <td>68-74</td>
+                                                <td>59-63</td>
+                                                <td>73-79</td>
+                                            </tr>
+                                            <tr>
+                                                <td>M</td>
+                                                <td>74-78</td>
+                                                <td>63-67</td>
+                                                <td>79-84</td>
+                                            </tr>
+                                            <tr>
+                                                <td>L</td>
+                                                <td>78-85</td>
+                                                <td>67-73</td>
+                                                <td>84-90</td>
+                                            </tr>
+                                            <tr>
+                                                <td>XL</td>
+                                                <td>85-93</td>
+                                                <td>73-80</td>
+                                                <td>90-97</td>
+                                            </tr>
+                                            <tr>
+                                                <td>XXL</td>
+                                                <td>93-101</td>
+                                                <td>80-88</td>
+                                                <td>97-103</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+
+                                <p class="sizes-popup__title">Кроссовки Nike</p>
+                                <div class="responsive-table">
+                                    <table class="table">
+                                        <thead>
+                                            <tr>
+                                                <th>USA</th>
+                                                <th><b>UK</b></th>
+                                                <th>CM</th>
+                                                <th>EURO</th>
+                                                <th>RUS</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>7,5</td>
+                                                <td><b>6,5</b></td>
+                                                <td>25,5</td>
+                                                <td>40,5</td>
+                                                <td>39,5</td>
+                                            </tr>
+                                            <tr>
+                                                <td>8</td>
+                                                <td><b>7</b></td>
+                                                <td>30</td>
+                                                <td>41</td>
+                                                <td>40</td>
+                                            </tr>
+                                            <tr>
+                                                <td>8,5</td>
+                                                <td><b>7,5</b></td>
+                                                <td>30,5</td>
+                                                <td>41,5</td>
+                                                <td>40,5</td>
+                                            </tr>
+                                            <tr>
+                                                <td>9</td>
+                                                <td><b>8</b></td>
+                                                <td>31</td>
+                                                <td>42</td>
+                                                <td>41</td>
+                                            </tr>
+                                            <tr>
+                                                <td>9,5</td>
+                                                <td><b>8,5</b></td>
+                                                <td>31,5</td>
+                                                <td>42,5</td>
+                                                <td>41,5</td>
+                                            </tr>
+                                            <tr>
+                                                <td>10</td>
+                                                <td><b>9,5</b></td>
+                                                <td>32</td>
+                                                <td>43</td>
+                                                <td>42</td>
+                                            </tr>
+                                            <tr>
+                                                <td>10,5</td>
+                                                <td><b>10</b></td>
+                                                <td>32,5</td>
+                                                <td>43,5</td>
+                                                <td>42,5</td>
+                                            </tr>
+                                            <tr>
+                                                <td>11</td>
+                                                <td><b>10,5</b></td>
+                                                <td>33</td>
+                                                <td>44</td>
+                                                <td>43</td>
+                                            </tr>
+                                            <tr>
+                                                <td>11,5</td>
+                                                <td><b>11</b></td>
+                                                <td>33,5</td>
+                                                <td>44,5</td>
+                                                <td>43,5</td>
+                                            </tr>
+                                            <tr>
+                                                <td>12</td>
+                                                <td><b>11,5</b></td>
+                                                <td>34</td>
+                                                <td>45</td>
+                                                <td>44</td>
+                                            </tr>
+                                            <tr>
+                                                <td>12,5</td>
+                                                <td><b>12</b></td>
+                                                <td>34,5</td>
+                                                <td>45,5</td>
+                                                <td>44,5</td>
+                                            </tr>
+                                            <tr>
+                                                <td>13</td>
+                                                <td><b>12,5</b></td>
+                                                <td>35</td>
+                                                <td>50</td>
+                                                <td>45</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+
+                                <p class="sizes-popup__title">Ботинки (Модели Choco и Trail)</p>
+                                <div class="responsive-table">
+                                    <table class="table">
+                                        <thead>
+                                            <tr>
+                                                <th>USA</th>
+                                                <th><b>UK</b></th>
+                                                <th>CM</th>
+                                                <th>RUS</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>8,5</td>
+                                                <td><b>7,5</b></td>
+                                                <td>30,5</td>
+                                                <td>40,5</td>
+                                            </tr>
+                                            <tr>
+                                                <td>9</td>
+                                                <td><b>8</b></td>
+                                                <td>31</td>
+                                                <td>41</td>
+                                            </tr>
+                                            <tr>
+                                                <td>9,5</td>
+                                                <td><b>8,5</b></td>
+                                                <td>31,5</td>
+                                                <td>41,5</td>
+                                            </tr>
+                                            <tr>
+                                                <td>10</td>
+                                                <td><b>9,5</b></td>
+                                                <td>32</td>
+                                                <td>42</td>
+                                            </tr>
+                                            <tr>
+                                                <td>10,5</td>
+                                                <td><b>10</b></td>
+                                                <td>32,5</td>
+                                                <td>42,5</td>
+                                            </tr>
+                                            <tr>
+                                                <td>11</td>
+                                                <td><b>10,5</b></td>
+                                                <td>33</td>
+                                                <td>43</td>
+                                            </tr>
+                                            <tr>
+                                                <td>11,5</td>
+                                                <td><b>11</b></td>
+                                                <td>33,5</td>
+                                                <td>43,5</td>
+                                            </tr>
+                                            <tr>
+                                                <td>12</td>
+                                                <td><b>11,5</b></td>
+                                                <td>34</td>
+                                                <td>44</td>
+                                            </tr>
+                                            <tr>
+                                                <td>12,5</td>
+                                                <td><b>12</b></td>
+                                                <td>34,5</td>
+                                                <td>44,5</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+
+                                <p class="sizes-popup__title">Ботинки (Модели Lucky, Rancho, Scout и Shore) </p>
+                                <div class="responsive-table">
+                                    <table class="table">
+                                        <thead>
+                                            <tr>
+                                                <th>USA</th>
+                                                <th><b>UK</b></th>
+                                                <th>CM</th>
+                                                <th>RUS</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>8,5</td>
+                                                <td><b>7,5</b></td>
+                                                <td>30,5</td>
+                                                <td>40,5</td>
+                                            </tr>
+                                            <tr>
+                                                <td>9</td>
+                                                <td><b>8</b></td>
+                                                <td>31</td>
+                                                <td>41</td>
+                                            </tr>
+                                            <tr>
+                                                <td>9,5</td>
+                                                <td><b>8,5</b></td>
+                                                <td>31,5</td>
+                                                <td>41,5</td>
+                                            </tr>
+                                            <tr>
+                                                <td>10</td>
+                                                <td><b>9,5</b></td>
+                                                <td>32</td>
+                                                <td>42</td>
+                                            </tr>
+                                            <tr>
+                                                <td>10,5</td>
+                                                <td><b>10</b></td>
+                                                <td>32,5</td>
+                                                <td>42,5</td>
+                                            </tr>
+                                            <tr>
+                                                <td>11</td>
+                                                <td><b>10,5</b></td>
+                                                <td>33</td>
+                                                <td>43</td>
+                                            </tr>
+                                            <tr>
+                                                <td>11,5</td>
+                                                <td><b>11</b></td>
+                                                <td>33,5</td>
+                                                <td>43,5</td>
+                                            </tr>
+                                            <tr>
+                                                <td>12</td>
+                                                <td><b>11,5</b></td>
+                                                <td>34</td>
+                                                <td>44</td>
+                                            </tr>
+                                            <tr>
+                                                <td>12,5</td>
+                                                <td><b>12</b></td>
+                                                <td>34,5</td>
+                                                <td>44,5</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+
+                                <p class="sizes-popup__title">Как мы измеряем наши вещи:</p>
+
+                                <div class="sizes-popup__text">
+                                    <p><img src="images/content/sizes.jpg" alt=""></p>
+                                    <p>Вам понадобится сантиметровая лента.</p>
+                                    <p>При измерении обхвата груди лента должна плотно прилегать к телу, спереди проходить по наиболее выступающим точкам, сбоку - через подмышечные впадины, сзади - обхватывая лопатки.</p>
+                                    <p>Обхват талии измеряется строго горизонтально по самой узкой части тела.</p>
+                                    <p>При измерении обхвата бедер лента должна находиться горизонтально, проходя по середине бедра и сзади по наиболее выступающим точкам ягодиц.</p>
+                                </div>
+                            </div>
+
+                            <div class="detail__sizes">
+                                <label class="detail__size">
+                                    <input type="radio" name="size" value="xs" checked>
+                                    <span class="detail__size-text">XS</span>
+                                </label>
+                                <label class="detail__size">
+                                    <input type="radio" name="size" value="s">
+                                    <span class="detail__size-text">S</span>
+                                </label>
+                                <label class="detail__size">
+                                    <input type="radio" name="size" value="m">
+                                    <span class="detail__size-text">M</span>
+                                </label>
+                                <label class="detail__size">
+                                    <input type="radio" name="size" value="l">
+                                    <span class="detail__size-text">L</span>
+                                </label>
+                                <label class="detail__size">
+                                    <input type="radio" name="size" value="xl">
+                                    <span class="detail__size-text">XL</span>
+                                </label>
+                                <label class="detail__size">
+                                    <input type="radio" name="size" value="xxl" disabled>
+                                    <span class="detail__size-text">XXL</span>
+                                </label>
+                            </div>
+
+                            <div class="detail__buttons">
+                                <a class="detail__to-cart button" href="#">В корзину</a>
+                                <button class="detail__favorite button button--bordered" type="button" title="Добавить в избранное" style="width: 65px">
+                                    <svg aria-hidden="true">
+                                        <use xlink:href="images/sprite.svg#favorite" />
+                                    </svg>
+                                </button>
+                            </div>
+
+                            <div class="detail__accordions">
+                                <div class="accordion">
+                                    <button class="js-accordion-toggler accordion__toggler" type="button">
+                                        <span>Описание товара</span>
+                                        <svg aria-hidden="true">
+                                            <use xlink:href="images/sprite.svg#plus" />
+                                        </svg>
+                                    </button>
+
+                                    <div class="accordion__body">
+                                        <p><b>Дутый пуховик от Anteater.</b></p>
+                                        <p>Реально объемная и теплая куртка.</p>
+                                        <p><b>Цвет:</b> черный и серый.</p>
+                                    </div>
+                                </div>
+                                <div class="accordion">
+                                    <button class="js-accordion-toggler accordion__toggler" type="button">
+                                        <span>Состав и уход</span>
+                                        <svg aria-hidden="true">
+                                            <use xlink:href="images/sprite.svg#plus" />
+                                        </svg>
+                                    </button>
+
+                                    <div class="accordion__body">
+                                        <p><b>Материал:</b> полиэстер.</p>
+                                        <p><b>Утеплитель:</b> Shelter + Холлофайбер.</p>
+                                        <p>
+                                            / бережная машинная стирка при 30°С с низкими оборотами отжима<br>
+                                            / не отбеливать<br>
+                                            / барабанная сушка запрещена<br>
+                                            / не использовать агрессивные моющие средства<br>
+                                            / не утюжить<br>
+                                            / не перекручивать
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="accordion">
+                                    <button class="js-accordion-toggler accordion__toggler" type="button">
+                                        <span>Размерная сетка</span>
+                                        <svg aria-hidden="true">
+                                            <use xlink:href="images/sprite.svg#plus" />
+                                        </svg>
+                                    </button>
+
+                                    <div class="accordion__body">
+                                        <p>
+                                            XS - ширина 50см, длина от плечевого шва 70см.<br>
+                                            S - ширина 52см, длина от плечевого шва 72см.<br>
+                                            M - ширина 55см, длина от плечевого шва 76см.<br>
+                                            L - ширина 59см, длина от плечевого шва 78см.<br>
+                                            XL - ширина 61см, длина от плечевого шва 81см.<br>
+                                            XXL - ширина 65см, длина от плечевого шва 88см.<br>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="detail__features">
+                                <p>Высылаем заказы каждый будний день</p>
+                                <p>Обмен или возврат в течение 14 дней</p>
+                                <p>Звоните для информации 8 (812) 601-0710</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    //= template/footer.html
+</body>
+
+<script src="js/swiper-bundle.min.js"></script>
+<script src="js/jquery-3.6.0.min.js"></script>
+<script src="js/jquery.fancybox.min.js"></script>
+<script src="js/fancybox-defaults.js"></script>
+<script src="js/main.js"></script>
+
+</html>

@@ -178,6 +178,13 @@
             margin-right: 0;
         }
 
+        &::after {
+            @media(max-width: $sm - 1px) {
+                height: 30px;
+                min-width: 30px;
+            }
+        }
+
         svg {
             fill: var(--black);
             height: 20px;
@@ -478,8 +485,10 @@
         margin-bottom: 30px;
         text-decoration: none;
         @media(min-width: $hd) {
+            @include active-area;
             margin-right: 10px;
             margin-bottom: 0;
+            position: relative;
             text-transform: uppercase;
         }
         @media(min-width: $lg) {

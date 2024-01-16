@@ -59,4 +59,11 @@
     <symbol id="chevron_down" viewBox="0 0 24 24">
       <path d="M7.41 8.59L6 10L12 16L18 10L16.59 8.59L12 13.17L7.41 8.59Z"/>
     </symbol>
+    <symbol id="plus" viewBox="0 0 15 15">
+      <rect x="7" width="1" height="15"/>
+      <rect y="7" width="15" height="1"/>
+    </symbol>
+    <symbol id="minus" viewBox="0 0 15 15">
+      <rect y="7" width="15" height="1"/>
+    </symbol>
 </svg>

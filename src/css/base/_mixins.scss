@@ -36,9 +36,9 @@
 @mixin active-area {
     &::after {
         content: '';
-        height: 30px;
+        height: 40px;
         left: 50%;
-        min-width: 30px;
+        min-width: 40px;
         position: absolute;
         top: 50%;
         transform: translate(-50%, -50%);

@@ -39,6 +39,18 @@ $(document).ready(function() {
       $('.header').removeClass('is-dark');
     }
   }
+
+  //деталка слайдер
+  if($('.js-detail').length && $('body').width() < 768) {
+    const detailSlider = new Swiper('.js-detail', {
+      loop: true,
+      pagination: {
+        el: '.swiper-pagination',
+      }
+    });
+  }
+
+  console.log(window.innerWidth, $(document).width())
 });
 
 //перезапуск функции навешивания класса на шапку при скролле и ресайзе
@@ -106,5 +118,20 @@ $(document).on('click', '.js-filter-toggler', function () {
 $(document).on('click', '.js-filter-section-toggler', function () {
   $(this).toggleClass('is-active');
   $(this).closest('.filter__section').find('.filter__section-inner').slideToggle();
+  return false;
+});
+
+//тогглер аакордеона
+$(document).on('click', '.js-accordion-toggler', function () {
+  var _this = $(this);
+  if($(this).hasClass('is-active')) {
+    _this.closest('.accordion').find('.accordion__body').slideUp();
+    _this.find('use').attr('xlink:href', 'images/sprite.svg#plus');
+    _this.removeClass('is-active');
+  }else{
+    _this.closest('.accordion').find('.accordion__body').slideDown();
+    _this.find('use').attr('xlink:href', 'images/sprite.svg#minus');
+    _this.addClass('is-active');
+  }
   return false;
 });
