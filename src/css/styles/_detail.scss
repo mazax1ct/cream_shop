@@ -2,6 +2,16 @@
     position: relative;
     z-index: auto;
 
+    &:not(:last-child) {
+        margin-bottom: 120px;
+        @media(min-width: $sm) {
+            margin-bottom: 150px;
+        }
+        @media(min-width: $fhd) {
+            margin-bottom: 260px;
+        }
+    }
+
     .breadcrumbs {
         @media(min-width: $xs) and (max-width: $sm - 1px) {
             left: 20px;
@@ -45,8 +55,8 @@
     }
 
     &__images {
-        margin-left: calc(0.1px - var(--container_padding));
-        margin-right: calc(0.1px - var(--container_padding));
+        margin-left: calc(0.01px - var(--container_padding));
+        margin-right: calc(0.01px - var(--container_padding));
         margin-bottom: 15px;
         @media(min-width: $xs) {
             margin-bottom: 40px;

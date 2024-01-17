@@ -49,8 +49,6 @@ $(document).ready(function() {
       }
     });
   }
-
-  console.log(window.innerWidth, $(document).width())
 });
 
 //перезапуск функции навешивания класса на шапку при скролле и ресайзе
@@ -121,7 +119,7 @@ $(document).on('click', '.js-filter-section-toggler', function () {
   return false;
 });
 
-//тогглер аакордеона
+//тогглер аккордеона
 $(document).on('click', '.js-accordion-toggler', function () {
   var _this = $(this);
   if($(this).hasClass('is-active')) {
@@ -135,3 +133,26 @@ $(document).on('click', '.js-accordion-toggler', function () {
   }
   return false;
 });
+
+//слайдер рекомендаций
+if($('.js-recommendations').length){
+  const recommendationsSlider = new Swiper('.js-recommendations', {
+    loop: true,
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+    },
+    slidesPerView: 2,
+    spaceBetween: 20,
+    breakpoints: {
+      480: {
+        slidesPerView: 3,
+        spaceBetween: 20
+      },
+      1024: {
+        slidesPerView: 4,
+        spaceBetween: 20
+      }
+    }
+  });
+}

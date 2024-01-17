@@ -1,0 +1,98 @@
+.contacts {
+    @media(min-width: $sm) {
+        display: flex;
+        flex-direction: row-reverse;
+        gap: 30px;
+    }
+    @media(min-width: $hd) {
+        flex-direction: column-reverse;
+        gap: 30px;
+    }
+    @media(min-width: $fhd) {
+        gap: 70px;
+    }
+
+    &__map {
+        background-color: rgba(0,0,0,0.1);
+        display: flex;
+        min-height: 230px;
+        margin-bottom: 40px;
+        overflow: hidden;
+        @media(min-width: $xs) {
+            min-height: 300px;
+        }
+        @media(min-width: $sm) {
+            margin-bottom: 0;
+            min-width: 55%;
+            width: 55%;
+        }
+        @media(min-width: $md) {
+            min-width: 64%;
+            width: 64%;
+        }
+        @media(min-width: $hd) {
+            min-height: 500px;
+            width: 100%;
+        }
+
+        &::after {
+            content: 'Карта загружается...';
+            margin: auto;
+        }
+    }
+
+    &__text {
+        @media(min-width: $sm) {
+            font-size: 14px;
+            flex-grow: 1;
+        }
+        @media(min-width: $hd) {
+            display: flex;
+            font-size: 16px;
+        }
+        @media(min-width: $fhd) {
+            font-size: 20px;
+        }
+    }
+
+    &__block {
+        &:not(:last-child) {
+            margin-bottom: 40px;
+            @media(min-width: $hd) {
+                margin-bottom: 0;
+            }
+        }
+        @media(min-width: $hd) {
+            width: calc(100% / 3);
+        }
+
+        h2 {
+            font-size: 20px;
+            font-weight: 500;
+            margin-bottom: 15px;
+            margin-top: 0;
+            @media(min-width: $hd) {
+                font-weight: 600;
+                text-transform: uppercase;
+            }
+            @media(min-width: $fhd) {
+                font-size: 25px;
+            }
+        }
+
+        p {
+            margin-bottom: 0;
+
+            &:not(:last-child) {
+                margin-bottom: 15px;
+            }
+        }
+
+        a {
+            text-decoration: none;
+            @include hover {
+                text-decoration: underline;
+            }
+        }
+    }
+}

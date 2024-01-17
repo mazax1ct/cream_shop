@@ -3,8 +3,8 @@ body.compensate-for-scrollbar {
 }
 
 .fancybox-active {
-  /*height: auto;*/
-  overflow: hidden;
+  height: auto;
+  /*overflow: hidden;*/
 }
 
 .fancybox-is-hidden {

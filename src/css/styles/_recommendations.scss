@@ -1,0 +1,33 @@
+.recommendations {
+    .swiper-button-next,
+    .swiper-button-prev {
+        @include button-reset;
+        align-items: center;
+        display: flex;
+        justify-content: center;
+        height: 24px;
+        width: 24px;
+
+        &::after {
+            display: none;
+        }
+
+        svg {
+            fill: var(--black);
+            height: 24px;
+            width: 24px;
+        }
+
+        &.swiper-button-lock {
+            display: none;
+        }
+    }
+
+    .swiper-button-prev {
+        left: 0;
+    }
+
+    .swiper-button-next {
+        right: 0;
+    }
+}
