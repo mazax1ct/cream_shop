@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+
+    <title>CREAM</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="format-detection" content="telephone=no">
+
+    //= template/favicon.html
+
+    //= template/fonts_preload.html
+
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="plugins_css/jquery.fancybox.css" />
+</head>
+
+<body class="page">
+    <div class="page__content">
+        //= template/header.html
+
+        <main>
+            <div class="container">
+                <div class="form-block">
+                    <ul class="form-menu">
+                        <li class="form-menu__item">
+                            <a class="form-menu__link" href="#">Регистрация</a>
+                        </li>
+                        <li class="form-menu__item">
+                            <a class="form-menu__link is-active" href="#">Авторизация</a>
+                        </li>
+                    </ul>
+
+                    <form class="auth-form" action="">
+                        <div class="auth-form__row">
+                            <div class="auth-form__block">
+                                <div class="form-group">
+                                    <label class="form-label" for="user_email">Email</label>
+                                    <input id="user_email" class="input" type="text" value="" name="user_email" placeholder="example@mail.ru">
+                                </div>
+                            </div>
+                            <div class="auth-form__block">
+                                <div class="form-group">
+                                    <label class="form-label" for="user_pass">Пароль</label>
+                                    <input id="user_pass" class="input" type="password" value="" name="user_pass" placeholder="Минимум 6 символов">
+                                </div>
+                            </div>
+                        </div>
+
+                        <label class="checkbox">
+                            <input type="checkbox" name="" value="">
+                            <span class="checkbox__icon"></span>
+                            <span class="checkbox__text">Запомнить меня</span>
+                        </label>
+
+                        <button class="button" type="submit">Войти</button>
+                    </form>
+
+                    <div class="text-center"><a href="javascript:void(0)" data-fancybox="recover_popup" data-src="#recover_popup">Забыли пароль?</a></div>
+
+                    <div id="recover_popup" class="recover-popup">
+                        <p class="recover-popup__title">ЗАБЫЛИ ПАРОЛЬ?</p>
+                        <p class="recover-popup__text">Забыли свой пароль? Укажите свой Email или имя пользователя.<br> Ссылку на создание нового пароля вы получите по электронной почте.</p>
+                        <form action="">
+                            <div class="form-group">
+                                <input id="recover_email" class="input input--filled" type="text" value="" name="recover_email" placeholder="example@mail.ru">
+                            </div>
+
+                            <button class="button" type="submit">Восстановить</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    //= template/footer.html
+</body>
+
+<script src="js/jquery-3.6.0.min.js"></script>
+<script src="js/jquery.fancybox.min.js"></script>
+<script src="js/fancybox-defaults.js"></script>
+<script src="js/main.js"></script>
+
+</html>

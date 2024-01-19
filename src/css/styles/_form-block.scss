@@ -1,0 +1,209 @@
+.form-block {
+    @media(min-width: $hd) {
+        border: 1px solid #B1B1B1;
+        padding: 40px;
+    }
+    @media(min-width: $lg) {
+        padding: 60px;
+    }
+    @media(min-width: $fhd) {
+        padding: 110px 150px;
+    }
+}
+
+.form-menu {
+    @include list-reset;
+    display: flex;
+    gap: 20px;
+    font-size: 18px;
+    font-weight: 500;
+    margin-bottom: 40px;
+    text-transform: uppercase;
+    @media(min-width: $sm) {
+        font-size: 45px;
+        margin-bottom: 50px;
+    }
+    @media(min-width: $fhd) {
+        margin-bottom: 100px;
+    }
+
+    &__item {
+        flex-grow: 1;
+    }
+
+    &__link {
+        border-bottom: 2px solid rgba(0,0,0,0.2);
+        color: rgba(0,0,0,0.5);
+        display: block;
+        padding-bottom: 8px;
+        text-align: center;
+        text-decoration: none;
+
+        &.is-active {
+            color: var(--black);
+            border-bottom-color: var(--black);
+        }
+        @include hover {
+            color: var(--black);
+        }
+    }
+}
+
+.register-form {
+    &:not(:last-child) {
+        margin-bottom: 30px;
+        @media(min-width: $sm) {
+            margin-bottom: 50px;
+        }
+    }
+
+    &__row {
+        @media(min-width: $hd) {
+            display: flex;
+            gap: 20px;
+        }
+
+        &:first-child {
+            @media(min-width: $hd) {
+                margin-bottom: 60px;
+            }
+        }
+    }
+
+    &__block {
+        flex-grow: 1;
+        margin-bottom: 20px;
+        @media(min-width: $hd) {
+            margin-bottom: 0;
+        }
+
+        &:nth-child(3) {
+            @media(min-width: $hd) {
+                min-width: 520px;
+                max-width: 574px;
+                width: 58%;
+            }
+        }
+    }
+
+    &__captcha {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+        @media(min-width: $hd) {
+            flex-wrap: nowrap;
+        }
+
+        img {
+            border-radius: 5px;
+            border: 1px solid var(--black);
+            display: block;
+            max-height: 65px;
+            max-width: 277px;
+        }
+
+        .input {
+            flex-grow: 1;
+            height: auto;
+            min-height: 50px;
+            min-width: 277px;
+            max-width: 277px;
+            @media(min-width: $hd) {
+                min-width: 230px;
+            }
+        }
+    }
+
+    .checkbox {
+        margin-top: 40px;
+        margin-bottom: 40px;
+    }
+}
+
+.recover-popup {
+    background-color: #fff;
+    display: none;
+
+    &.fancybox-content {
+        max-width: 325px;
+        padding: 50px 25px 25px;
+        width: 100%;
+        @media(min-width: $xs) {
+            max-width: 440px;
+            padding: 50px;
+        }
+        @media(min-width: $hd) {
+            max-width: 830px;
+            padding: 90px 95px 80px;
+        }
+    }
+
+    &__title {
+        font-size: 18px;
+        font-weight: 500;
+        margin-bottom: 10px;
+        text-transform: uppercase;
+        @media(min-width: $sm) {
+            font-size: 25px;
+        }
+        @media(min-width: $hd) {
+            font-size: 40px;
+        }
+        @media(min-width: $fhd) {
+            font-size: 58px;
+            margin-bottom: 25px;
+        }
+    }
+
+    &__text {
+        color: rgba(0,0,0,0.7);
+        font-size: 10px;
+        margin-bottom: 15px;
+        @media(min-width: $hd) {
+            font-size: 16px;
+            margin-bottom: 25px;
+        }
+    }
+
+    .form-group {
+        margin-bottom: 15px;
+        @media(min-width: $hd) {
+            margin-bottom: 25px;
+        }
+    }
+}
+
+.fancybox-slide--html .recover-popup .fancybox-close-small {
+    right: 15px;
+    top: 15px;
+}
+
+.auth-form {
+    &:not(:last-child) {
+        margin-bottom: 30px;
+        @media(min-width: $sm) {
+            margin-bottom: 50px;
+        }
+    }
+
+    &__row {
+        @media(min-width: $hd) {
+            display: flex;
+            gap: 20px;
+            margin-bottom: 50px;
+        }
+    }
+
+    &__block {
+        flex-grow: 1;
+        margin-bottom: 20px;
+        @media(min-width: $hd) {
+            margin-bottom: 0;
+        }
+    }
+
+    .checkbox {
+        margin-top: 40px;
+        margin-bottom: 40px;
+    }
+}

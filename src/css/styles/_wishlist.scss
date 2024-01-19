@@ -1,0 +1,148 @@
+.fav-item {
+    align-items: start;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px 20px;
+    @media(min-width: $xs) {
+        grid-template-columns: 230px auto;
+    }
+    @media(min-width: $sm) {
+        border-bottom: 1px solid var(--black);
+        grid-template-columns: 230px 1fr 1fr;
+        padding-top: 40px;
+        padding-bottom: 40px;
+    }
+    @media(min-width: $md) {
+        gap: 30px;
+    }
+    @media(min-width: $hd) {
+        align-items: center;
+        grid-template-columns: 230px 1fr 1fr 80px 230px;
+    }
+    @media(min-width: $lg) {
+        gap: 40px;
+    }
+    @media(min-width: $fhd) {
+        grid-template-columns: 280px 1fr 1fr 80px 280px;
+        gap: 100px;
+        padding-top: 70px;
+        padding-bottom: 70px;
+    }
+
+    &:first-child {
+        @media(min-width: $sm) {
+            border-top: 1px solid var(--black);
+        }
+    }
+
+    &:not(:last-child) {
+        margin-bottom: 40px;
+        @media(min-width: $sm) {
+            margin-bottom: 0;
+        }
+    }
+
+    &__image {
+        grid-row: span 3;
+        overflow: hidden;
+        @media(min-width: $hd) {
+            grid-row: 1;
+        }
+
+        img {
+            display: block;
+            transition: transform 0.3s;
+            transform: scale(1);
+            width: 100%;
+        }
+        @include hover {
+            img {
+                transform: scale(1.02);
+            }
+        }
+    }
+
+    &__info {
+        @media(min-width: $sm) {
+            grid-column: span 2;
+        }
+        @media(min-width: $hd) {
+            grid-column: 2;
+        }
+    }
+
+    &__title {
+        font-weight: 500;
+        margin-bottom: 10px;
+        @media(min-width: $sm) {
+            font-size: 24px;
+        }
+
+        a {
+            text-decoration: none;
+            @include hover {
+                text-decoration: underline;
+            }
+        }
+    }
+
+    &__prop {
+        margin-bottom: 0;
+        @media(min-width: $sm) {
+            font-size: 20px;
+        }
+    }
+
+    &__price-block {
+        align-items: baseline;
+        display: flex;
+        font-weight: 500;
+        flex-wrap: wrap;
+        gap: 10px 20px;
+        @media(min-width: $sm) {
+            font-size: 24px;
+            grid-column: span 2;
+        }
+        @media(min-width: $hd) {
+            grid-column: 3;
+        }
+        @media(min-width: $fhd) {
+            font-size: 30px;
+        }
+    }
+
+    &__old-price {
+        color: rgba(0,0,0,0.5);
+        font-size: 70%;
+    }
+
+    &__delete-block {
+        align-self: end;
+        @media(min-width: $hd) {
+            align-self: center;
+        }
+    }
+
+    &__delete {
+        @include button-reset;
+        @include active-area;
+        position: relative;
+        text-decoration: underline;
+        z-index: auto;
+        @include hover {
+            text-decoration: none;
+        }
+    }
+
+    &__to-cart {
+        grid-column: span 2;
+        @media(min-width: $sm) {
+            align-self: end;
+            grid-column: 3;
+        }
+        @media(min-width: $hd) {
+            align-self: center;
+            grid-column: 5;
+        }
+    }
+}

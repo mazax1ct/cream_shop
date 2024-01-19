@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+
+    <title>CREAM</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="format-detection" content="telephone=no">
+
+    //= template/favicon.html
+
+    //= template/fonts_preload.html
+
+    <link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body class="page">
+    <div class="page__content">
+        //= template/header.html
+
+        <main>
+            <div class="container">
+                <div class="page__title">Корзина</div>
+
+                <div class="cart">
+                    <div class="cart__list">
+                        <div class="cart-item">
+                            <a class="cart-item__image" href="detail.html"><img src="images/content/img_10.jpg" srcset="images/content/img_10@2x.jpg 2x" alt=""></a>
+                            <div class="cart-item__info">
+                                <p class="cart-item__title"><a href="#">NEW Футболка Anteater Tee</a></p>
+                                <p class="cart-item__prop">Size: М</p>
+                            </div>
+                            <div class="cart-item__price-block">
+                                <span class="cart-item__price">1799 rub</span>
+                                <span class="cart-item__old-price"><s>1999</s> rub</span>
+                            </div>
+                            <div class="cart-item__qnt">
+                                <div class="qnt">
+                                    <button class="qnt__button" type="button" title="Уменьшить">
+                                        <svg aria-hidden="true">
+                                            <use xlink:href="images/sprite.svg#minus" />
+                                        </svg>
+                                    </button>
+                                    <input class="qnt__input" type="text" value="1">
+                                    <button class="qnt__button" type="button" title="Увеличить">
+                                        <svg aria-hidden="true">
+                                            <use xlink:href="images/sprite.svg#plus" />
+                                        </svg>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="cart-item__delete-block">
+                                <button class="cart-item__delete" type="button">Удалить</button>
+                            </div>
+                        </div>
+                        <div class="cart-item">
+                            <a class="cart-item__image" href="detail.html"><img src="images/content/img_10.jpg" srcset="images/content/img_10@2x.jpg 2x" alt=""></a>
+                            <div class="cart-item__info">
+                                <p class="cart-item__title"><a href="#">NEW Футболка Anteater Tee</a></p>
+                                <p class="cart-item__prop">Size: М</p>
+                            </div>
+                            <div class="cart-item__price-block">
+                                <span class="cart-item__price">1799 rub</span>
+                                <span class="cart-item__old-price"><s>1999</s> rub</span>
+                            </div>
+                            <div class="cart-item__qnt">
+                                <div class="qnt">
+                                    <button class="qnt__button" type="button" title="Уменьшить">
+                                        <svg aria-hidden="true">
+                                            <use xlink:href="images/sprite.svg#minus" />
+                                        </svg>
+                                    </button>
+                                    <input class="qnt__input" type="text" value="1">
+                                    <button class="qnt__button" type="button" title="Увеличить">
+                                        <svg aria-hidden="true">
+                                            <use xlink:href="images/sprite.svg#plus" />
+                                        </svg>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="cart-item__delete-block">
+                                <button class="cart-item__delete" type="button">Удалить</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="cart__result">
+                        <p class="cart__result-title">Детали заказа</p>
+                        <div class="cart__result-goods">
+                            <span class="cart__result-goods-cnt">2 товара на сумму</span>
+                            <span class="cart__result-goods-price">3998 rub</span>
+                        </div>
+
+                        <div class="cart__result-coupon form-group">
+                            <label class="form-label" for="coupon">Введите код купона для скидки</label>
+                            <div class="cart__result-coupon-container">
+                                <input id="coupon" class="input" type="text" value="" name="coupon">
+                                <button class="cart__result-coupon-delete" type="button" title="Удалить">
+                                    <svg aria-hidden="true">
+                                        <use xlink:href="images/sprite.svg#close" />
+                                    </svg>
+                                </button>
+                            </div>
+                        </div>
+
+                        <p class="cart__result-discount">
+                            <span>Скидка:</span>
+                            <span>0 rub</span>
+                        </p>
+
+                        <p class="cart__result-summ">
+                            <span>Итого:</span>
+                            <span class="cart__result-summ-price">3998 rub</span>
+                        </p>
+
+                        <p class="cart__result-discount-note">Без учета возможной стоимости доставки</p>
+
+                        <a class="button" href="#">Перейти к оформлению</a>
+
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    //= template/footer.html
+</body>
+
+<script src="js/jquery-3.6.0.min.js"></script>
+<script src="js/main.js"></script>
+
+</html>
