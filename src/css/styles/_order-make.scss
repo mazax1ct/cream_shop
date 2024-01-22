@@ -1,0 +1,335 @@
+.order-make {
+    @media(min-width: $hd) {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 0 40px;
+        justify-content: space-between;
+    }
+
+    &__result {
+        margin-bottom: 40px;
+        @media(min-width: $hd) {
+            border-left: 2px solid rgba(0,0,0,0.2);
+            max-width: 570px;
+            margin-bottom: 0;
+            padding-left: 40px;
+            order: 3;
+            width: calc(100% - 59% - 40px);
+        }
+        @media(min-width: $fhd) {
+            padding-left: 80px;
+        }
+    }
+
+    &__goods-toggler {
+        @include button-reset;
+        @include active-area;
+        align-items: center;
+        cursor: pointer;
+        display: flex;
+        font-size: 20px;
+        font-weight: 500;
+        justify-content: space-between;
+        margin-bottom: 40px;
+        position: relative;
+        width: 100%;
+        @media(min-width: $hd) {
+            display: none;
+        }
+
+        &.is-active {
+            svg {
+                transform: rotate(-180deg);
+            }
+        }
+
+        svg {
+            fill: var(--black);
+            height: 24px;
+            width: 24px;
+        }
+    }
+
+    &__goods {
+        display: none;
+        padding-bottom: 40px;
+        @media(max-width: $hd - 1px) {
+            margin-left: calc(0.01px - var(--container_padding));
+            margin-right: calc(0.01px - var(--container_padding));
+        }
+        @media(min-width: $hd) {
+            display: block;
+        }
+    }
+
+    &__coupon {
+        margin-bottom: 20px;
+        @media(min-width: $sm) {
+            margin-bottom: 40px;
+        }
+    }
+
+    &__coupon-container {
+        position: relative;
+        z-index: auto;
+    }
+
+    &__coupon-delete {
+        @include button-reset;
+        align-items: center;
+        display: flex;
+        justify-content: center;
+        height: 50px;
+        left: auto;
+        position: absolute;
+        right: 0;
+        top: 0;
+        width: 50px;
+        z-index: 1;
+        @media(min-width: $sm) {
+            height: 65px;
+            width: 65px;
+        }
+
+        svg {
+            fill: var(--black);
+            height: 16px;
+            width: 16px;
+        }
+    }
+
+    &__discount,
+    &__summ {
+        align-items: center;
+        display: flex;
+        justify-content: space-between;
+        font-size: 18px;
+        text-transform: uppercase;
+        @media(min-width: $sm) {
+            font-size: 25px;
+        }
+    }
+
+    &__discount {
+        margin-bottom: 15px;
+        @media(min-width: $sm) {
+            margin-bottom: 20px;
+        }
+    }
+
+    &__summ {
+        margin-bottom: 0;
+    }
+
+    &__summ-price {
+        font-weight: 600;
+    }
+
+    &__menu {
+        margin-bottom: 25px;
+        @media(min-width: $xs) {
+            margin-bottom: 60px;
+        }
+        @media(min-width: $hd) {
+            order: 1;
+            width: 100%;
+        }
+    }
+
+    &__menu-list {
+        @include list-reset;
+        display: flex;
+        gap: 20px;
+        font-size: 18px;
+        font-weight: 600;
+        margin-left: calc(0.01px - var(--container_padding));
+        margin-right: calc(0.01px - var(--container_padding));
+        padding-left: var(--container_padding);
+        padding-right: var(--container_padding);
+        overflow-x: auto;
+        text-transform: uppercase;
+        -ms-overflow-style: none;
+        scrollbar-width: none;
+        @media(min-width: $sm) {
+            font-size: 35px;
+        }
+        @media(min-width: $fhd) {
+            font-size: 42px;
+        }
+
+        &::-webkit-scrollbar {
+            display: none;
+        }
+    }
+
+    &__menu-item {
+        flex-grow: 1;
+    }
+
+    &__menu-button {
+        @include button-reset;
+        border-bottom: 2px solid rgba(0,0,0,0.2);
+        color: rgba(0,0,0,0.5);
+        display: block;
+        padding-bottom: 8px;
+        text-align: center;
+        text-decoration: none;
+        transition: color 0.3s;
+        width: 100%;
+
+        &.is-active {
+            color: var(--black);
+            border-bottom-color: var(--black);
+        }
+        @include hover {
+            color: var(--black);
+        }
+    }
+
+    &__tabs {
+        @media(min-width: $hd) {
+            order: 2;
+            width: 58%;
+        }
+    }
+
+    &__auth,
+    &__delivery,
+    &__user-info {
+        .checkbox,
+        .form-group {
+            margin-bottom: 30px;
+            @media(min-width: $fhd) {
+                margin-bottom: 40px;
+            }
+        }
+    }
+
+    &__auth {
+        margin-bottom: 40px;
+        @media(min-width: $fhd) {
+            margin-bottom: 80px;
+        }
+    }
+
+    &__reg-note {
+        font-size: 16px;
+        margin-bottom: 40px;
+        @media(min-width: $fhd) {
+            font-size: 25px;
+        }
+    }
+
+    &__reg-link {
+        margin-bottom: 40px;
+    }
+
+    &__reg-note_2 {
+        color: rgba(0,0,0,0.7);
+        font-size: 12px;
+        margin-bottom: 0;
+        @media(min-width: $sm) {
+            font-size: 15px;
+        }
+    }
+}
+
+.om-goods {
+    align-items: start;
+    border-bottom: 1px solid var(--black);
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px 20px;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    @media(max-width: $hd - 1px) {
+        padding-left: var(--container_padding);
+        padding-right: var(--container_padding);
+    }
+    @media(min-width: $xs) {
+        grid-template-columns: 230px auto;
+    }
+    @media(min-width: $md) {
+        gap: 30px;
+    }
+    @media(min-width: $hd) {
+        border: none;
+        grid-template-columns: 190px auto;
+        padding: 0;
+    }
+
+    &:first-child {
+        border-top: 1px solid var(--black);
+        @media(min-width: $hd) {
+            border: none;
+        }
+    }
+
+    &:not(:last-child) {
+        @media(min-width: $hd) {
+            margin-bottom: 40px;
+        }
+    }
+
+    &__image {
+        grid-row: span 3;
+        overflow: hidden;
+
+        img {
+            display: block;
+            transition: transform 0.3s;
+            transform: scale(1);
+            width: 100%;
+        }
+        @include hover {
+            img {
+                transform: scale(1.02);
+            }
+        }
+    }
+
+    &__info {}
+
+    &__title {
+        font-weight: 500;
+        margin-bottom: 10px;
+        @media(min-width: $sm) {
+            font-size: 16px;
+        }
+
+        a {
+            text-decoration: none;
+            @include hover {
+                text-decoration: underline;
+            }
+        }
+    }
+
+    &__prop {
+        font-size: 12px;
+        margin-bottom: 0;
+        @media(min-width: $sm) {
+            font-size: 14px;
+        }
+
+        &:not(:last-child) {
+            margin-bottom: 10px;
+        }
+    }
+
+    &__price-block {
+        align-items: baseline;
+        display: flex;
+        font-weight: 500;
+        flex-wrap: wrap;
+        gap: 10px;
+        @media(min-width: $sm) {
+            font-size: 14px;
+        }
+    }
+
+    &__old-price {
+        color: rgba(0,0,0,0.5);
+        font-size: 70%;
+    }
+}

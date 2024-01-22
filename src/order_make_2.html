@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+
+    <title>CREAM</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="format-detection" content="telephone=no">
+
+    //= template/favicon.html
+
+    //= template/fonts_preload.html
+
+    <link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body class="page">
+    <div class="page__content">
+        //= template/header.html
+
+        <main>
+            <div class="container">
+                <h1 class="page__title">оформление заказа</h1>
+
+                <div class="order-make">
+                    <div class="order-make__result">
+
+                        <button class="js-goods-toggler order-make__goods-toggler" type="button">
+                            <span>Ваш заказ</span>
+                            <svg aria-hidden="true">
+                                <use xlink:href="images/sprite.svg#chevron_down" />
+                            </svg>
+                        </button>
+
+                        <div class="order-make__goods">
+                            <div class="om-goods">
+                                <a class="om-goods__image" href="detail.html"><img src="images/content/img_10.jpg" srcset="images/content/img_10@2x.jpg 2x" alt=""></a>
+                                <div class="om-goods__info">
+                                    <p class="om-goods__title"><a href="#">NEW Футболка Anteater Tee</a></p>
+                                    <p class="om-goods__prop">Size: М</p>
+                                    <p class="om-goods__prop">Количество: 1</p>
+                                    <div class="om-goods__price-block">
+                                        <span class="om-goods__price">1799 rub</span>
+                                        <span class="om-goods__old-price"><s>1999</s> rub</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="om-goods">
+                                <a class="om-goods__image" href="detail.html"><img src="images/content/img_10.jpg" srcset="images/content/img_10@2x.jpg 2x" alt=""></a>
+                                <div class="om-goods__info">
+                                    <p class="om-goods__title"><a href="#">NEW Футболка Anteater Tee</a></p>
+                                    <p class="om-goods__prop">Size: М</p>
+                                    <p class="om-goods__prop">Количество: 1</p>
+                                    <div class="om-goods__price-block">
+                                        <span class="om-goods__price">1799 rub</span>
+                                        <span class="om-goods__old-price"><s>1999</s> rub</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="order-make__coupon form-group">
+                            <label class="form-label" for="coupon">Введите код купона для скидки</label>
+                            <div class="order-make__coupon-container">
+                                <input id="coupon" class="input" type="text" value="SKIDKA10" name="coupon">
+                                <button class="order-make__coupon-delete" type="button" title="Удалить">
+                                    <svg aria-hidden="true">
+                                        <use xlink:href="images/sprite.svg#close" />
+                                    </svg>
+                                </button>
+                            </div>
+                        </div>
+
+                        <p class="order-make__discount">
+                            <span>Скидка:</span>
+                            <span>0 rub</span>
+                        </p>
+
+                        <p class="order-make__summ">
+                            <span>Итого:</span>
+                            <span class="order-make__summ-price">3998 rub</span>
+                        </p>
+                    </div>
+
+                    <div class="order-make__menu">
+                        <ul class="order-make__menu-list">
+                            <li class="order-make__menu-item">
+                                <button class="order-make__menu-button" type="button">АВТОРИЗАЦИЯ</button>
+                            </li>
+                            <li class="order-make__menu-item">
+                                <button class="order-make__menu-button is-active" type="button">ПОКУПАТЕЛЬ</button>
+                            </li>
+                            <li class="order-make__menu-item">
+                                <button class="order-make__menu-button" type="button">ДОСТАВКА</button>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="order-make__tabs">
+                        <div class="order-make__user-info">
+                            <form action="">
+                                <div class="form-group">
+                                    <label class="form-label" for="user_name">Ваше имя <span class="required">*</span></label>
+                                    <input id="user_name" class="input" type="text" value="" name="user_name" placeholder="ФИО" autocomplete="off">
+                                </div>
+
+                                <div class="form-group">
+                                    <label class="form-label" for="user_phone">Номер телефона <span class="required">*</span></label>
+                                    <input id="user_phone" class="input" type="text" value="" name="user_phone" placeholder="+ 7 (999) 999 - 99 - 99">
+                                </div>
+
+                                <div class="form-group">
+                                    <label class="form-label" for="email">Email <span class="required">*</span></label>
+                                    <input id="email" class="input" type="text" value="" name="email" placeholder="example@mail.ru" autocomplete="off">
+                                </div>
+
+                                <div class="form-group">
+                                    <label class="form-label" for="user_address">Ваш адрес <span class="required">*</span></label>
+                                    <input id="user_address" class="input" type="text" value="" name="user_address" placeholder="Город, улица, дом, квартира">
+                                </div>
+
+                                <div class="form-group">
+                                    <label class="form-label" for="order_comments">Комментарии к заказу</label>
+                                    <textarea id="order_comments" class="textarea" name="order_comments"></textarea>
+                                </div>
+
+                                <button class="button" type="button">Далее</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    //= template/footer.html
+</body>
+
+<script src="js/jquery-3.6.0.min.js"></script>
+<script src="js/main.js"></script>
+
+</html>

@@ -18,21 +18,20 @@
     }
 }
 
-.input {
+.input,
+.textarea {
     border-radius: 5px;
     border: 1px solid var(--input_border_default);
     background-color: transparent;
     color: var(--black);
     font-size: 14px;
     font-weight: 400;
-    height: 50px;
     line-height: 1.4;
     padding: 15px 20px;
     transition: border-color 0.3s;
     width: 100%;
     @media(min-width: $sm) {
         font-size: 18px;
-        height: 65px;
         padding: 20px 25px;
     }
 
@@ -74,6 +73,18 @@
     &.error {
         color: var(--error_color);
     }
+}
+
+.input {
+    height: 50px;
+    @media(min-width: $sm) {
+        height: 65px;
+    }
+}
+
+.textarea {
+    height: 200px;
+    resize: none;
 }
 
 input,

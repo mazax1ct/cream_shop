@@ -156,3 +156,10 @@ if($('.js-recommendations').length){
     }
   });
 }
+
+//тогглер товаров в оформлении заказа
+$(document).on('click', '.js-goods-toggler', function () {
+  $(this).toggleClass('is-active');
+  $('.order-make__goods').slideToggle('');
+  return false;
+});

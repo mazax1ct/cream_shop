@@ -112,81 +112,50 @@
 
         <main>
             <div class="container">
-                <div class="page__title">Корзина</div>
+                <h1 class="page__title">оформление заказа</h1>
 
-                <div class="cart">
-                    <div class="cart__list">
-                        <div class="cart-item">
-                            <a class="cart-item__image" href="detail.html"><img src="images/content/img_10.jpg" srcset="images/content/img_10@2x.jpg 2x" alt=""></a>
-                            <div class="cart-item__info">
-                                <p class="cart-item__title"><a href="#">NEW Футболка Anteater Tee</a></p>
-                                <p class="cart-item__prop">Size: М</p>
-                            </div>
-                            <div class="cart-item__price-block">
-                                <span class="cart-item__price">1799 rub</span>
-                                <span class="cart-item__old-price"><s>1999</s> rub</span>
-                            </div>
-                            <div class="cart-item__qnt">
-                                <div class="qnt">
-                                    <button class="qnt__button" type="button" title="Уменьшить">
-                                        <svg aria-hidden="true">
-                                            <use xlink:href="images/sprite.svg#minus" />
-                                        </svg>
-                                    </button>
-                                    <input class="qnt__input" type="text" value="1">
-                                    <button class="qnt__button" type="button" title="Увеличить">
-                                        <svg aria-hidden="true">
-                                            <use xlink:href="images/sprite.svg#plus" />
-                                        </svg>
-                                    </button>
+                <div class="order-make">
+                    <div class="order-make__result">
+
+                        <button class="js-goods-toggler order-make__goods-toggler" type="button">
+                            <span>Ваш заказ</span>
+                            <svg aria-hidden="true">
+                                <use xlink:href="images/sprite.svg#chevron_down" />
+                            </svg>
+                        </button>
+
+                        <div class="order-make__goods">
+                            <div class="om-goods">
+                                <a class="om-goods__image" href="detail.html"><img src="images/content/img_10.jpg" srcset="images/content/img_10@2x.jpg 2x" alt=""></a>
+                                <div class="om-goods__info">
+                                    <p class="om-goods__title"><a href="#">NEW Футболка Anteater Tee</a></p>
+                                    <p class="om-goods__prop">Size: М</p>
+                                    <p class="om-goods__prop">Количество: 1</p>
+                                    <div class="om-goods__price-block">
+                                        <span class="om-goods__price">1799 rub</span>
+                                        <span class="om-goods__old-price"><s>1999</s> rub</span>
+                                    </div>
                                 </div>
                             </div>
-                            <div class="cart-item__delete-block">
-                                <button class="cart-item__delete" type="button">Удалить</button>
-                            </div>
-                        </div>
-                        <div class="cart-item">
-                            <a class="cart-item__image" href="detail.html"><img src="images/content/img_10.jpg" srcset="images/content/img_10@2x.jpg 2x" alt=""></a>
-                            <div class="cart-item__info">
-                                <p class="cart-item__title"><a href="#">NEW Футболка Anteater Tee</a></p>
-                                <p class="cart-item__prop">Size: М</p>
-                            </div>
-                            <div class="cart-item__price-block">
-                                <span class="cart-item__price">1799 rub</span>
-                                <span class="cart-item__old-price"><s>1999</s> rub</span>
-                            </div>
-                            <div class="cart-item__qnt">
-                                <div class="qnt">
-                                    <button class="qnt__button" type="button" title="Уменьшить">
-                                        <svg aria-hidden="true">
-                                            <use xlink:href="images/sprite.svg#minus" />
-                                        </svg>
-                                    </button>
-                                    <input class="qnt__input" type="text" value="1">
-                                    <button class="qnt__button" type="button" title="Увеличить">
-                                        <svg aria-hidden="true">
-                                            <use xlink:href="images/sprite.svg#plus" />
-                                        </svg>
-                                    </button>
+                            <div class="om-goods">
+                                <a class="om-goods__image" href="detail.html"><img src="images/content/img_10.jpg" srcset="images/content/img_10@2x.jpg 2x" alt=""></a>
+                                <div class="om-goods__info">
+                                    <p class="om-goods__title"><a href="#">NEW Футболка Anteater Tee</a></p>
+                                    <p class="om-goods__prop">Size: М</p>
+                                    <p class="om-goods__prop">Количество: 1</p>
+                                    <div class="om-goods__price-block">
+                                        <span class="om-goods__price">1799 rub</span>
+                                        <span class="om-goods__old-price"><s>1999</s> rub</span>
+                                    </div>
                                 </div>
                             </div>
-                            <div class="cart-item__delete-block">
-                                <button class="cart-item__delete" type="button">Удалить</button>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="cart__result">
-                        <p class="cart__result-title">Детали заказа</p>
-                        <div class="cart__result-goods">
-                            <span class="cart__result-goods-cnt">2 товара на сумму</span>
-                            <span class="cart__result-goods-price">3998 rub</span>
                         </div>
 
-                        <div class="cart__result-coupon form-group">
+                        <div class="order-make__coupon form-group">
                             <label class="form-label" for="coupon">Введите код купона для скидки</label>
-                            <div class="cart__result-coupon-container">
+                            <div class="order-make__coupon-container">
                                 <input id="coupon" class="input" type="text" value="SKIDKA10" name="coupon">
-                                <button class="cart__result-coupon-delete" type="button" title="Удалить">
+                                <button class="order-make__coupon-delete" type="button" title="Удалить">
                                     <svg aria-hidden="true">
                                         <use xlink:href="images/sprite.svg#close" />
                                     </svg>
@@ -194,20 +163,99 @@
                             </div>
                         </div>
 
-                        <p class="cart__result-discount">
+                        <p class="order-make__discount">
                             <span>Скидка:</span>
                             <span>0 rub</span>
                         </p>
 
-                        <p class="cart__result-summ">
+                        <p class="order-make__summ">
                             <span>Итого:</span>
-                            <span class="cart__result-summ-price">3998 rub</span>
+                            <span class="order-make__summ-price">3998 rub</span>
                         </p>
+                    </div>
 
-                        <p class="cart__result-discount-note">Без учета возможной стоимости доставки</p>
+                    <div class="order-make__menu">
+                        <ul class="order-make__menu-list">
+                            <li class="order-make__menu-item">
+                                <button class="order-make__menu-button" type="button">АВТОРИЗАЦИЯ</button>
+                            </li>
+                            <li class="order-make__menu-item">
+                                <button class="order-make__menu-button" type="button">ПОКУПАТЕЛЬ</button>
+                            </li>
+                            <li class="order-make__menu-item">
+                                <button class="order-make__menu-button is-active" type="button">ДОСТАВКА</button>
+                            </li>
+                        </ul>
+                    </div>
 
-                        <a class="button" href="#">Перейти к оформлению</a>
+                    <div class="order-make__tabs">
+                        <div class="order-make__delivery">
+                            <div class="form-group">
+                                <label class="form-label" for="region">Выберете регион доставки <span class="required">*</span></label>
+                                <input id="region" class="input" type="text" value="" name="region" placeholder="Местонахождение">
+                            </div>
 
+                            <label class="checkbox">
+                                <input type="checkbox" name="" value="">
+                                <span class="checkbox__icon"></span>
+                                <span class="checkbox__text">Не Россия</span>
+                            </label>
+
+                            <div class="order-make__delivery-list">
+                                <label class="delivery">
+                                    <input type="radio">
+                                    <span class="delivery__image"><img src="" alt=""></span>
+                                    <span class="delivery__info">
+                                        <span class="delivery__title">Почта России</span>
+                                        <span class="delivery__text">Срок приблизительной доставки зависит от службы доставки (уточняйте в службе доставки): от 7 до 14 дней</span>
+                                        <span class="delivery__price">Стоимость: 400 руб.</span>
+                                    </span>
+                                    <span class="delivery__checkbox">Почта России</span>
+                                </label>
+
+                                <label class="delivery">
+                                    <input type="radio">
+                                    <span class="delivery__image"><img src="" alt=""></span>
+                                    <span class="delivery__info">
+                                        <span class="delivery__title">Доставка заказа курьером компании СДЭК</span>
+                                        <span class="delivery__text">Срок приблизительной доставки зависит от службы доставки (уточняйте в службе доставки): 2-3 дня</span>
+                                        <span class="delivery__price">Стоимость: 705 руб.</span>
+                                    </span>
+                                    <span class="delivery__checkbox">Доставка курьером СДЭК</span>
+                                </label>
+
+                                <label class="delivery">
+                                    <input type="radio">
+                                    <span class="delivery__image"><img src="" alt=""></span>
+                                    <span class="delivery__info">
+                                        <span class="delivery__title">Самовывоз СДЭК</span>
+                                        <span class="delivery__text">Срок приблизительной доставки зависит от службы доставки (уточняйте в службе доставки): 2-3 дня</span>
+                                        <span class="delivery__price">Стоимость: 345 руб.</span>
+                                    </span>
+                                    <span class="delivery__checkbox">Самовывоз СДЭК</span>
+                                </label>
+                            </div>
+
+                            <label class="checkbox">
+                                <input type="checkbox" name="" value="">
+                                <span class="checkbox__icon"></span>
+                                <span class="checkbox__text">Я согласен с <a href="#">политикой конфиденциальности</a> и на обработку персональных данных</span>
+                            </label>
+
+                            <label class="checkbox">
+                                <input type="checkbox" name="" value="">
+                                <span class="checkbox__icon"></span>
+                                <span class="checkbox__text">Я прочитал и согласен с <a href="#">условиями интернет-магазина CreamShop</a></span>
+                            </label>
+
+                            <label class="checkbox">
+                                <input type="checkbox" name="" value="">
+                                <span class="checkbox__icon"></span>
+                                <span class="checkbox__text">Я проверил свой заказ, данные о доставке и оплате - все верно</span>
+                            </label>
+
+                            <button class="button" type="button">Оформить</button>
+                        </div>
                     </div>
                 </div>
             </div>

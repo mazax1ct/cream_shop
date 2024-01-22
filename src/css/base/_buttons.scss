@@ -15,6 +15,9 @@
     user-select: none;
     white-space: nowrap;
     width: 100%;
+    @media(min-width: $fhd) {
+        font-size: 20px;
+    }
 
     svg {
         fill: #fff;

@@ -112,81 +112,50 @@
 
         <main>
             <div class="container">
-                <div class="page__title">Корзина</div>
+                <h1 class="page__title">оформление заказа</h1>
 
-                <div class="cart">
-                    <div class="cart__list">
-                        <div class="cart-item">
-                            <a class="cart-item__image" href="detail.html"><img src="images/content/img_10.jpg" srcset="images/content/img_10@2x.jpg 2x" alt=""></a>
-                            <div class="cart-item__info">
-                                <p class="cart-item__title"><a href="#">NEW Футболка Anteater Tee</a></p>
-                                <p class="cart-item__prop">Size: М</p>
-                            </div>
-                            <div class="cart-item__price-block">
-                                <span class="cart-item__price">1799 rub</span>
-                                <span class="cart-item__old-price"><s>1999</s> rub</span>
-                            </div>
-                            <div class="cart-item__qnt">
-                                <div class="qnt">
-                                    <button class="qnt__button" type="button" title="Уменьшить">
-                                        <svg aria-hidden="true">
-                                            <use xlink:href="images/sprite.svg#minus" />
-                                        </svg>
-                                    </button>
-                                    <input class="qnt__input" type="text" value="1">
-                                    <button class="qnt__button" type="button" title="Увеличить">
-                                        <svg aria-hidden="true">
-                                            <use xlink:href="images/sprite.svg#plus" />
-                                        </svg>
-                                    </button>
+                <div class="order-make">
+                    <div class="order-make__result">
+
+                        <button class="js-goods-toggler order-make__goods-toggler" type="button">
+                            <span>Ваш заказ</span>
+                            <svg aria-hidden="true">
+                                <use xlink:href="images/sprite.svg#chevron_down" />
+                            </svg>
+                        </button>
+
+                        <div class="order-make__goods">
+                            <div class="om-goods">
+                                <a class="om-goods__image" href="detail.html"><img src="images/content/img_10.jpg" srcset="images/content/img_10@2x.jpg 2x" alt=""></a>
+                                <div class="om-goods__info">
+                                    <p class="om-goods__title"><a href="#">NEW Футболка Anteater Tee</a></p>
+                                    <p class="om-goods__prop">Size: М</p>
+                                    <p class="om-goods__prop">Количество: 1</p>
+                                    <div class="om-goods__price-block">
+                                        <span class="om-goods__price">1799 rub</span>
+                                        <span class="om-goods__old-price"><s>1999</s> rub</span>
+                                    </div>
                                 </div>
                             </div>
-                            <div class="cart-item__delete-block">
-                                <button class="cart-item__delete" type="button">Удалить</button>
-                            </div>
-                        </div>
-                        <div class="cart-item">
-                            <a class="cart-item__image" href="detail.html"><img src="images/content/img_10.jpg" srcset="images/content/img_10@2x.jpg 2x" alt=""></a>
-                            <div class="cart-item__info">
-                                <p class="cart-item__title"><a href="#">NEW Футболка Anteater Tee</a></p>
-                                <p class="cart-item__prop">Size: М</p>
-                            </div>
-                            <div class="cart-item__price-block">
-                                <span class="cart-item__price">1799 rub</span>
-                                <span class="cart-item__old-price"><s>1999</s> rub</span>
-                            </div>
-                            <div class="cart-item__qnt">
-                                <div class="qnt">
-                                    <button class="qnt__button" type="button" title="Уменьшить">
-                                        <svg aria-hidden="true">
-                                            <use xlink:href="images/sprite.svg#minus" />
-                                        </svg>
-                                    </button>
-                                    <input class="qnt__input" type="text" value="1">
-                                    <button class="qnt__button" type="button" title="Увеличить">
-                                        <svg aria-hidden="true">
-                                            <use xlink:href="images/sprite.svg#plus" />
-                                        </svg>
-                                    </button>
+                            <div class="om-goods">
+                                <a class="om-goods__image" href="detail.html"><img src="images/content/img_10.jpg" srcset="images/content/img_10@2x.jpg 2x" alt=""></a>
+                                <div class="om-goods__info">
+                                    <p class="om-goods__title"><a href="#">NEW Футболка Anteater Tee</a></p>
+                                    <p class="om-goods__prop">Size: М</p>
+                                    <p class="om-goods__prop">Количество: 1</p>
+                                    <div class="om-goods__price-block">
+                                        <span class="om-goods__price">1799 rub</span>
+                                        <span class="om-goods__old-price"><s>1999</s> rub</span>
+                                    </div>
                                 </div>
                             </div>
-                            <div class="cart-item__delete-block">
-                                <button class="cart-item__delete" type="button">Удалить</button>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="cart__result">
-                        <p class="cart__result-title">Детали заказа</p>
-                        <div class="cart__result-goods">
-                            <span class="cart__result-goods-cnt">2 товара на сумму</span>
-                            <span class="cart__result-goods-price">3998 rub</span>
                         </div>
 
-                        <div class="cart__result-coupon form-group">
+                        <div class="order-make__coupon form-group">
                             <label class="form-label" for="coupon">Введите код купона для скидки</label>
-                            <div class="cart__result-coupon-container">
+                            <div class="order-make__coupon-container">
                                 <input id="coupon" class="input" type="text" value="SKIDKA10" name="coupon">
-                                <button class="cart__result-coupon-delete" type="button" title="Удалить">
+                                <button class="order-make__coupon-delete" type="button" title="Удалить">
                                     <svg aria-hidden="true">
                                         <use xlink:href="images/sprite.svg#close" />
                                     </svg>
@@ -194,20 +163,62 @@
                             </div>
                         </div>
 
-                        <p class="cart__result-discount">
+                        <p class="order-make__discount">
                             <span>Скидка:</span>
                             <span>0 rub</span>
                         </p>
 
-                        <p class="cart__result-summ">
+                        <p class="order-make__summ">
                             <span>Итого:</span>
-                            <span class="cart__result-summ-price">3998 rub</span>
+                            <span class="order-make__summ-price">3998 rub</span>
                         </p>
+                    </div>
 
-                        <p class="cart__result-discount-note">Без учета возможной стоимости доставки</p>
+                    <div class="order-make__menu">
+                        <ul class="order-make__menu-list">
+                            <li class="order-make__menu-item">
+                                <button class="order-make__menu-button" type="button">АВТОРИЗАЦИЯ</button>
+                            </li>
+                            <li class="order-make__menu-item">
+                                <button class="order-make__menu-button is-active" type="button">ПОКУПАТЕЛЬ</button>
+                            </li>
+                            <li class="order-make__menu-item">
+                                <button class="order-make__menu-button" type="button">ДОСТАВКА</button>
+                            </li>
+                        </ul>
+                    </div>
 
-                        <a class="button" href="#">Перейти к оформлению</a>
+                    <div class="order-make__tabs">
+                        <div class="order-make__user-info">
+                            <form action="">
+                                <div class="form-group">
+                                    <label class="form-label" for="user_name">Ваше имя <span class="required">*</span></label>
+                                    <input id="user_name" class="input" type="text" value="" name="user_name" placeholder="ФИО" autocomplete="off">
+                                </div>
 
+                                <div class="form-group">
+                                    <label class="form-label" for="user_phone">Номер телефона <span class="required">*</span></label>
+                                    <input id="user_phone" class="input" type="text" value="" name="user_phone" placeholder="+ 7 (999) 999 - 99 - 99">
+                                </div>
+
+                                <div class="form-group">
+                                    <label class="form-label" for="email">Email <span class="required">*</span></label>
+                                    <input id="email" class="input" type="text" value="" name="email" placeholder="example@mail.ru" autocomplete="off">
+                                </div>
+
+                                <div class="form-group">
+                                    <label class="form-label" for="user_address">Ваш адрес <span class="required">*</span></label>
+                                    <input id="user_address" class="input" type="text" value="" name="user_address" placeholder="Город, улица, дом, квартира">
+                                </div>
+
+                                <div class="form-group">
+                                    <label class="form-label" for="order_comments">Комментарии к заказу</label>
+                                    <textarea id="order_comments" class="textarea" name="order_comments"></textarea>
+                                </div>
+
+                                <button class="button" type="button">Далее</button>
+                            </form>
+                        </div>
                     </div>
                 </div>
             </div>
