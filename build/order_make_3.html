@@ -33,7 +33,10 @@
                 <div class="main-menu">
                     <div class="main-menu__inner">
                         <div class="main-menu__top">
-                            <div class="main-menu__logo"><img src="images/logo.svg" alt="CREAM магазин уличной одежды"></div>
+                            <div class="main-menu__logo">
+                                <img src="images/_logo.svg" alt="CREAM магазин уличной одежды">
+                                <span class="main-menu__logo-text">магазин уличной одежды</span>
+                            </div>
                             <button class="js-main-menu-closer header__button main-menu__closer" type="button" title="Закрыть меню">
                                 <svg aria-hidden="true">
                                     <use xlink:href="images/sprite.svg#close" />
@@ -77,8 +80,9 @@
         
                 <div class="header__logo" href="main.html" title="На главную">
                     <svg aria-hidden="true">
-                        <use xlink:href="images/sprite.svg#logo" />
+                        <use xlink:href="images/sprite.svg#logo_" />
                     </svg>
+                    <span class="header__logo-text">магазин уличной одежды</span>
                 </div>
         
                 <div class="header__links">
@@ -203,36 +207,36 @@
 
                             <div class="order-make__delivery-list">
                                 <label class="delivery">
-                                    <input type="radio">
-                                    <span class="delivery__image"><img src="" alt=""></span>
+                                    <input type="radio" name="delivery" value="pochta_rossii">
+                                    <span class="delivery__image"><img src="images/content/delivery/img_1.png" srcset="images/content/delivery/img_1@2x.png" alt=""></span>
+                                    <span class="delivery__checkbox">Почта России</span>
                                     <span class="delivery__info">
                                         <span class="delivery__title">Почта России</span>
                                         <span class="delivery__text">Срок приблизительной доставки зависит от службы доставки (уточняйте в службе доставки): от 7 до 14 дней</span>
                                         <span class="delivery__price">Стоимость: 400 руб.</span>
                                     </span>
-                                    <span class="delivery__checkbox">Почта России</span>
                                 </label>
 
                                 <label class="delivery">
-                                    <input type="radio">
-                                    <span class="delivery__image"><img src="" alt=""></span>
+                                    <input type="radio" name="delivery" value="kurer_cdek">
+                                    <span class="delivery__image"><img src="images/content/delivery/img_2.png" srcset="images/content/delivery/img_2@2x.png" alt=""></span>
+                                    <span class="delivery__checkbox">Доставка курьером СДЭК</span>
                                     <span class="delivery__info">
                                         <span class="delivery__title">Доставка заказа курьером компании СДЭК</span>
                                         <span class="delivery__text">Срок приблизительной доставки зависит от службы доставки (уточняйте в службе доставки): 2-3 дня</span>
                                         <span class="delivery__price">Стоимость: 705 руб.</span>
                                     </span>
-                                    <span class="delivery__checkbox">Доставка курьером СДЭК</span>
                                 </label>
 
                                 <label class="delivery">
-                                    <input type="radio">
-                                    <span class="delivery__image"><img src="" alt=""></span>
+                                    <input type="radio" name="delivery" value="samovivoz_cdek">
+                                    <span class="delivery__image"><img src="images/content/delivery/img_3.png" srcset="images/content/delivery/img_3@2x.png" alt=""></span>
+                                    <span class="delivery__checkbox">Самовывоз СДЭК</span>
                                     <span class="delivery__info">
                                         <span class="delivery__title">Самовывоз СДЭК</span>
                                         <span class="delivery__text">Срок приблизительной доставки зависит от службы доставки (уточняйте в службе доставки): 2-3 дня</span>
                                         <span class="delivery__price">Стоимость: 345 руб.</span>
                                     </span>
-                                    <span class="delivery__checkbox">Самовывоз СДЭК</span>
                                 </label>
                             </div>
 
@@ -264,7 +268,11 @@
 
     <footer class="footer">
         <div class="footer__inner container">
-            <img class="footer__logo" src="images/logo.svg" alt="CREAM магазин уличной одежды">
+            <div class="footer__logo">
+                <img src="images/_logo.svg" alt="CREAM магазин уличной одежды">
+                <span class="footer__logo-text">магазин уличной одежды</span>
+            </div>
+    
             <div class="footer__menu">
                 <ul class="footer-menu">
                     <li class="footer-menu__title">Магазин</li>
@@ -278,8 +286,8 @@
                     <li class="footer-menu__title">Компания</li>
                     <li class="footer-menu__item"><a href="about.html">О нас</a></li>
                     <li class="footer-menu__item"><a href="contacts.html">Контакты</a></li>
-                    <li class="footer-menu__item"><a href="#">Оферта</a></li>
-                    <li class="footer-menu__item"><a href="#">Политика конфиденциальности</a></li>
+                    <li class="footer-menu__item"><a href="offer.html">Оферта</a></li>
+                    <li class="footer-menu__item"><a href="policy.html">Политика конфиденциальности</a></li>
                 </ul>
     
                 <ul class="footer-menu">
@@ -299,13 +307,13 @@
     
             <div class="footer__bottom">
                 <p>© 2008-2023 CREAMSHOP. All rights reserved.</p>
-                <a href="#">Privacy Policy</a>
+                <a href="policy.html">Privacy Policy</a>
             </div>
         </div>
     </footer>
-</body>
 
-<script src="js/jquery-3.6.0.min.js"></script>
-<script src="js/main.js"></script>
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
 
 </html>

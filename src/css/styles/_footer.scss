@@ -2,18 +2,15 @@
     background-color: var(--footer_bg);
     color: var(--black);
     flex-shrink: 0;
-    padding-top: 12px;
+    padding-top: 35px;
     padding-bottom: 24px;
     @media(min-width: $xs) {
-        padding-top: 20px;
         padding-bottom: 20px;
     }
     @media(min-width: $sm) {
-        padding-top: 30px;
         padding-bottom: 40px;
     }
     @media(min-width: $md) {
-        padding-top: 20px;
         padding-bottom: 20px;
     }
     @media(min-width: $hd) {
@@ -62,6 +59,14 @@
         }
     }
 
+    &__logo-text {
+        display: block;
+        font-size: 12px;
+        font-weight: 300;
+        margin-top: 5px;
+        text-align: center;
+    }
+
     &__menu {
         @media(min-width: $xs) {
             display: grid;
@@ -80,7 +85,6 @@
         @media(min-width: $hd) {
             grid-template-columns: repeat(4, 1fr);
             max-width: 1200px;
-            padding-top: 25px;
             width: 70%;
         }
     }
