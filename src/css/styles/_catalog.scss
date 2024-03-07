@@ -677,7 +677,11 @@
         }
 
         img {
+            aspect-ratio: 0.809;
+            background-color: #F1F2F5;
+            border: none;
             display: block;
+            width: 100%;
         }
 
         &::after {

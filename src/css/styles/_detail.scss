@@ -322,12 +322,21 @@
 
     &__favorite {
         min-width: 65px;
+        width: 65px;
+
+        &.is-added {
+            background-color: var(--black);
+
+            svg {
+                fill: #fff;
+            }
+        }
     }
 
     &__to-cart {
-        @media(max-width: $md - 1px) {
+        /*@media(max-width: $md - 1px) {
             max-width: 250px;
-        }
+        }*/
     }
 
     &__accordions {
