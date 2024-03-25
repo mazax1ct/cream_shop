@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+
+    <title>CREAM</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="format-detection" content="telephone=no">
+
+    //= template/favicon.html
+
+    //= template/fonts_preload.html
+
+    <link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body class="page">
+    <div class="page__content">
+        //= template/header.html
+
+        <main>
+            <div class="container">
+                <ul class="breadcrumbs">
+                    <li class="breadcrumbs__item"><a class="breadcrumbs__link" href="#">Каталог</a></li>
+                    <li class="breadcrumbs__item"><a class="breadcrumbs__link" href="#">Личный кабинет</a></li>
+                    <li class="breadcrumbs__item">Пароль</li>
+                </ul>
+
+                <h1 class="page__title">Пароль</h1>
+
+                <div class="page__columns">
+                    <div class="page__left-column">
+                        <ul class="left-menu">
+                            <li class="left-menu__item">
+                                <a class="left-menu__link" href="#">Мои заказы</a>
+                            </li>
+                            <li class="left-menu__item">
+                                <a class="left-menu__link" href="#">Личные данные</a>
+                            </li>
+                            <li class="left-menu__item">
+                                <a class="left-menu__link is-active" href="#">Пароль</a>
+                            </li>
+                            <li class="left-menu__item">
+                                <a class="left-menu__link" href="#">Подписка</a>
+                            </li>
+                            <li class="left-menu__item">
+                                <a class="left-menu__link" href="#">Выход</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="page__right-column">
+                        <form class="personal-form" action="">
+                            <div class="personal-form__row">
+                                <div class="form-group">
+                                    <label class="form-label" for="new_pass">Новый пароль</label>
+                                    <input id="new_pass" class="input" type="password" value="" name="new_pass" placeholder="">
+                                </div>
+                                <div class="personal-form__note">
+                                    Пожалуйста, только не "123123" ну или хотя бы в кавычках :)
+                                </div>
+                            </div>
+
+                            <div class="personal-form__row">
+                                <div class="form-group">
+                                    <label class="form-label" for="new_pass_re">Подтверждение нового пароля</label>
+                                    <input id="new_pass_re" class="input" type="password" value="" name="new_pass_re" placeholder="">
+                                </div>
+                                <div class="personal-form__note">
+                                    И еще раз - удостоверимся, что вы его запомнили
+                                </div>
+                            </div>
+
+                            <button class="button" type="submit">Сохранить данные</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    //= template/footer.html
+
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/contacts.js"></script>
+</body>
+
+</html>

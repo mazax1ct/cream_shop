@@ -65,6 +65,33 @@ html {
             margin-bottom: 70px;
         }
     }
+
+    &__columns {
+        @media(min-width: $md) {
+            display: flex;
+        }
+    }
+
+    &__left-column {
+        @media(max-width: $md - 0.01px) {
+            margin-bottom: 60px;
+        }
+        @media(min-width: $md) {
+            width: 300px;
+        }
+        @media(min-width: $fhd) {
+            width: 400px;
+        }
+    }
+
+    &__right-column {
+        @media(min-width: $md) {
+            width: calc(100% - 300px);
+        }
+        @media(min-width: $fhd) {
+            width: calc(100% - 300px);
+        }
+    }
 }
 
 .breadcrumbs + .page__title {

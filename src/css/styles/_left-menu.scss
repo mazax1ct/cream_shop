@@ -1,0 +1,28 @@
+.left-menu {
+    @include list-reset;
+    text-transform: uppercase;
+    @media(min-width: $fhd) {
+        font-size: 24px;
+    }
+
+    &__item {
+        &:not(:last-child) {
+            margin-bottom: 0.5em;
+        }
+    }
+
+    &__link {
+        display: inline-block;
+        padding-top: 0.5em;
+        padding-bottom: 0.5em;
+        text-decoration: none;
+        @include hover {
+            text-decoration: underline;
+        }
+
+        &.is-active {
+            font-weight: 500;
+            text-decoration: underline;
+        }
+    }
+}

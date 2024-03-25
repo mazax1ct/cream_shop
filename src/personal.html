@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+
+    <title>CREAM</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="format-detection" content="telephone=no">
+
+    //= template/favicon.html
+
+    //= template/fonts_preload.html
+
+    <link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body class="page">
+    <div class="page__content">
+        //= template/header.html
+
+        <main>
+            <div class="container">
+                <ul class="breadcrumbs">
+                    <li class="breadcrumbs__item"><a class="breadcrumbs__link" href="#">Каталог</a></li>
+                    <li class="breadcrumbs__item"><a class="breadcrumbs__link" href="#">Личный кабинет</a></li>
+                    <li class="breadcrumbs__item">Личные данные</li>
+                </ul>
+
+                <h1 class="page__title">Личные данные</h1>
+
+                <div class="page__columns">
+                    <div class="page__left-column">
+                        <ul class="left-menu">
+                            <li class="left-menu__item">
+                                <a class="left-menu__link" href="#">Мои заказы</a>
+                            </li>
+                            <li class="left-menu__item">
+                                <a class="left-menu__link is-active" href="#">Личные данные</a>
+                            </li>
+                            <li class="left-menu__item">
+                                <a class="left-menu__link" href="#">Пароль</a>
+                            </li>
+                            <li class="left-menu__item">
+                                <a class="left-menu__link" href="#">Подписка</a>
+                            </li>
+                            <li class="left-menu__item">
+                                <a class="left-menu__link" href="#">Выход</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="page__right-column">
+                        <form class="personal-form" action="">
+                            <div class="personal-form__row">
+                                <div class="form-group">
+                                    <label class="form-label" for="user_name">Ваше имя</label>
+                                    <input id="user_name" class="input" type="text" value="" name="user_name" placeholder="">
+                                </div>
+                                <div class="personal-form__note">
+                                    Укажите ваши данные: Фамилию, Имя и Отчество по аналогии с паспортными данными, так как для получения посылок вас могут попросить предоставить удостоверение личности. В случае не совпадения данных посылка не будет
+                                    выдана.
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <label class="form-label" for="user_last_name">Ваша фамилия</label>
+                                <input id="user_last_name" class="input" type="text" value="" name="user_last_name" placeholder="">
+                            </div>
+
+                            <div class="form-group">
+                                <label class="form-label" for="user_second_name">Ваше отчество</label>
+                                <input id="user_second_name" class="input" type="text" value="" name="user_second_name" placeholder="">
+                            </div>
+
+                            <div class="personal-form__row">
+                                <div class="form-group">
+                                    <label class="form-label" for="user_login">Ваш логин</label>
+                                    <input id="user_login" class="input" type="text" value="" name="user_login" placeholder="">
+                                </div>
+                                <div class="personal-form__note">
+                                    Придумайте ваш собственный уникальный логин для входа на сайт.
+                                </div>
+                            </div>
+
+                            <div class="personal-form__row">
+                                <div class="form-group">
+                                    <label class="form-label" for="user_email">Эл. почта</label>
+                                    <input id="user_email" class="input" type="text" value="" name="user_email" placeholder="">
+                                </div>
+                                <div class="personal-form__note">
+                                    Укажите, пожалуйста, актуальную почту для получения уведомлений о ходе доставки заказов
+                                </div>
+                            </div>
+
+                            <div class="personal-form__row">
+                                <div class="form-group">
+                                    <label class="form-label" for="user_phone">Телефон</label>
+                                    <input id="user_phone" class="input" type="text" value="" name="user_phone" placeholder="">
+                                </div>
+                                <div class="personal-form__note">
+                                    Введите ваш актуальный телефон для связи, почта и курьерские службы часто сообщают информацию по телефону.
+                                </div>
+                            </div>
+
+                            <button class="button" type="submit">Сохранить данные</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    //= template/footer.html
+
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/contacts.js"></script>
+</body>
+
+</html>

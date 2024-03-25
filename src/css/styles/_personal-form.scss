@@ -1,0 +1,46 @@
+.personal-form {
+    .form-group {
+        margin-bottom: 24px;
+        @media(min-width: $hd) {
+            padding-right: 24px;
+            width: 60%;
+        }
+    }
+
+    &__row {
+        margin-bottom: 24px;
+        @media(min-width: $hd) {
+            position: relative;
+        }
+
+        .form-group {
+            margin-bottom: 0;
+            @media(max-width: $hd - 0.01px) {
+                margin-bottom: 10px;
+            }
+        }
+    }
+
+    &__note {
+        color: rgba(0,0,0,.5);
+        font-size: 80%;
+        @media(min-width: $hd) {
+            left: 60%;
+            position: absolute;
+            padding-top: 40px;
+            top: 0;
+            width: 40%;
+            z-index: 1;
+        }
+    }
+
+    .checkbox {
+        margin-bottom: 24px;
+    }
+
+    .button {
+        @media(min-width: $hd) {
+            width: calc(60% - 24px);
+        }
+    }
+}

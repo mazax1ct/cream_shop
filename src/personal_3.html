@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+
+    <title>CREAM</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="format-detection" content="telephone=no">
+
+    //= template/favicon.html
+
+    //= template/fonts_preload.html
+
+    <link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body class="page">
+    <div class="page__content">
+        //= template/header.html
+
+        <main>
+            <div class="container">
+                <ul class="breadcrumbs">
+                    <li class="breadcrumbs__item"><a class="breadcrumbs__link" href="#">Каталог</a></li>
+                    <li class="breadcrumbs__item"><a class="breadcrumbs__link" href="#">Личный кабинет</a></li>
+                    <li class="breadcrumbs__item">Подписка</li>
+                </ul>
+
+                <h1 class="page__title">Подписка</h1>
+
+                <div class="page__columns">
+                    <div class="page__left-column">
+                        <ul class="left-menu">
+                            <li class="left-menu__item">
+                                <a class="left-menu__link" href="#">Мои заказы</a>
+                            </li>
+                            <li class="left-menu__item">
+                                <a class="left-menu__link" href="#">Личные данные</a>
+                            </li>
+                            <li class="left-menu__item">
+                                <a class="left-menu__link" href="#">Пароль</a>
+                            </li>
+                            <li class="left-menu__item">
+                                <a class="left-menu__link is-active" href="#">Подписка</a>
+                            </li>
+                            <li class="left-menu__item">
+                                <a class="left-menu__link" href="#">Выход</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="page__right-column">
+                        <form class="personal-form" action="">
+                            <h3>Настройки подписки</h3>
+
+                            <div class="personal-form__row">
+                                <div class="form-group">
+                                    <label class="form-label" for="email">Ваш email <span class="required">*</span></label>
+                                    <input id="email" class="input" type="text" value="" name="email" placeholder="">
+                                </div>
+                                <div class="personal-form__note">
+                                    Обещаем присылать письма только по делу, об акциях и промо-кодах. Никакого лишнего спама.
+                                </div>
+                            </div>
+
+                            <h4>Рубрики подписки</h4>
+
+                            <label class="checkbox">
+                                <input type="checkbox" name="" value="">
+                                <span class="checkbox__icon"></span>
+                                <span class="checkbox__text">Новости магазина</span>
+                            </label>
+
+                            <button class="button" type="submit" disabled>Сохранить</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    //= template/footer.html
+
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/contacts.js"></script>
+</body>
+
+</html>
