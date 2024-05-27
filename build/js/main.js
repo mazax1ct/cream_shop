@@ -108,7 +108,8 @@ $(document).on('click', '.js-search-opener', function () {
 //тогглер фильтра
 $(document).on('click', '.js-filter-toggler', function () {
   $(this).toggleClass('is-active');
-  $('.filter').slideToggle();
+  $('.filter-menu-wrapper').slideToggle();
+  $('.filter__columns-wrapper').slideToggle();
   return false;
 });
 
@@ -161,5 +162,19 @@ if($('.js-recommendations').length){
 $(document).on('click', '.js-goods-toggler', function () {
   $(this).toggleClass('is-active');
   $('.order-make__goods').slideToggle('');
+  return false;
+});
+
+//тогглер блока со свёрнутым текстом
+$(document).on('click', '.js-collapsed-text', function () {
+  var _this = $(this);
+  var text = $(this).closest('.collapsed-text').find('.collapsed-text__text');
+  if(!text.hasClass('is-collapsed')) {
+    text.addClass('is-collapsed');
+    _this.text('Открыть полное описание');
+  } else {
+    text.removeClass('is-collapsed');
+    _this.text('Скрыть полное описание');
+  }
   return false;
 });

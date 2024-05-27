@@ -228,18 +228,60 @@
     &__articul {
         font-size: 12px;
         font-weight: 300;
-        margin-bottom: 30px;
         @media(min-width: $sm) {
             font-size: 14px;
-            margin-bottom: 40px;
         }
         @media(min-width: $fhd) {
             font-size: 18px;
-            margin-bottom: 80px;
         }
 
         span {
             font-weight: 400;
+        }
+
+        & + .detail__sizes-top {
+            margin-top: 30px;
+            @media(min-width: $sm) {
+                margin-top: 40px;
+            }
+            @media(min-width: $fhd) {
+                margin-top: 80px;
+            }
+        }
+    }
+
+    &__others-colors-title {
+        font-size: 12px;
+        font-weight: 300;
+        margin-bottom: 20px;
+        @media(min-width: $sm) {
+            font-size: 14px;
+        }
+        @media(min-width: $fhd) {
+            font-size: 18px;
+        }
+    }
+
+    &__others-colors {
+        display: grid;
+        gap: 10px;
+        grid-template-columns: 1fr 1fr 1fr;
+        margin-bottom: 40px;
+
+        a {
+            display: block;
+            overflow: hidden;
+            @include hover {
+                img {
+                    transform: scale(1.02);
+                }
+            }
+        }
+
+        img {
+            display: block;
+            transition: transform 0.3s;
+            transform: scale(1);
         }
     }
 

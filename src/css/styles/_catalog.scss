@@ -49,6 +49,11 @@
     }
 }
 
+.catalog-top:not(:has(.breadcrumbs)) .page__title {
+    margin-bottom: 0;
+    width: auto;
+}
+
 .filter-toggler {
     @include button-reset;
     @include active-area;
@@ -74,7 +79,7 @@
 }
 
 .filter {
-    display: none;
+    /*display: none;*/
     margin-left: calc(0.1px - var(--container_padding));
     margin-right: calc(0.1px - var(--container_padding));
     padding-left: var(--container_padding);
@@ -88,9 +93,9 @@
     }
 
     &__inner {
-        padding-top: 40px;
+        padding-top: 20px;
         position: relative;
-        @media(min-width: $hd) {
+        @media(min-width: $sm) {
             padding-top: 0;
         }
     }
@@ -108,6 +113,26 @@
         }
     }
 
+    &__columns-wrapper {
+        display: none;
+        /*padding-top: 30px;
+        @media(min-width: $sm) {
+            padding-top: 40px;
+        }
+        @media(min-width: $fhd) {
+            padding-top: 60px;
+        }*/
+        .filter__section {
+            padding-top: 30px;
+            @media(min-width: $sm) {
+                padding-top: 40px;
+            }
+            @media(min-width: $fhd) {
+                padding-top: 60px;
+            }
+        }
+    }
+
     &__columns {
         @media(min-width: $hd) {
             display: grid;
@@ -121,13 +146,13 @@
     }
 
     &__section {
-        margin-bottom: 30px;
+        /*margin-bottom: 30px;
         @media(min-width: $sm) {
             margin-bottom: 40px;
         }
         @media(min-width: $fhd) {
             margin-bottom: 60px;
-        }
+        }*/
     }
 
     &__section-inner {
@@ -334,13 +359,24 @@
     }
 }
 
+.filter-menu-wrapper {
+    display: none;
+    padding-bottom: 30px;
+    @media(min-width: $sm) {
+        padding-bottom: 60px;
+    }
+    @media(min-width: $fhd) {
+        padding-bottom: 50px;
+    }
+}
+
 .filter-menu {
     @include list-reset;
     align-items: center;
     display: flex;
     font-size: 18px;
     font-weight: 500;
-    margin-bottom: 30px;
+    /*margin-bottom: 30px;*/
     margin-left: calc(0.1px - var(--container_padding));
     margin-right: calc(0.1px - var(--container_padding));
     padding-left: var(--container_padding);
@@ -351,11 +387,11 @@
     scrollbar-width: none;
     @media(min-width: $sm) {
         font-size: 25px;
-        margin-bottom: 60px;
+        /*margin-bottom: 60px;*/
     }
     @media(min-width: $fhd) {
         font-size: 35px;
-        margin-bottom: 50px;
+        /*margin-bottom: 50px;*/
     }
 
     &::-webkit-scrollbar {
