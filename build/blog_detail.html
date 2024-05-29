@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+
+    <title>CREAM</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="format-detection" content="telephone=no">
+
+    <link rel="shortcut icon" type="image/x-icon" href="images/favicon/favicon.ico">
+
+    <link rel="preload" href="fonts/Inter/subset-Inter-Regular.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+    <link rel="preload" href="fonts/Inter/subset-Inter-Bold.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+    <link rel="preload" href="fonts/Inter/subset-Inter-Medium.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+    <link rel="preload" href="fonts/Inter/subset-Inter-SemiBold.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="plugins_css/swiper-bundle.min.css" />
+</head>
+
+<body class="page page--top_banner">
+    <div class="page__content">
+        <header class="header compensate-for-scrollbar">
+            <div class="header__inner container">
+                <button class="js-main-menu-opener header__button header__button--menu-opener" type="button" title="Меню">
+                    <svg aria-hidden="true">
+                        <use xlink:href="images/sprite.svg#burger" />
+                    </svg>
+                </button>
+        
+                <div class="main-menu">
+                    <div class="main-menu__inner">
+                        <div class="main-menu__top">
+                            <div class="main-menu__logo">
+                                <img src="images/_logo.svg" alt="CREAM магазин уличной одежды">
+                                <span class="main-menu__logo-text">магазин уличной одежды</span>
+                            </div>
+                            <button class="js-main-menu-closer header__button main-menu__closer" type="button" title="Закрыть меню">
+                                <svg aria-hidden="true">
+                                    <use xlink:href="images/sprite.svg#close" />
+                                </svg>
+                            </button>
+                        </div>
+        
+                        <nav class="main-menu__nav">
+                            <a class="main-menu__nav-link" href="#">Новинки</a>
+                            <a class="main-menu__nav-link" href="#">Одежда</a>
+                            <a class="main-menu__nav-link" href="#">Аксессуары</a>
+                            <a class="main-menu__nav-link" href="#">Распродажа</a>
+                            <a class="main-menu__nav-link" href="about.html">О нас</a>
+                            <a class="main-menu__nav-link" href="contacts.html">Контакты</a>
+                        </nav>
+        
+                        <a class="main-menu__phone" href="tel:+78126010710">8 (812) 601-0710</a>
+        
+                        <a class="main-menu__personal button" href="personal.html">Войти в личный кабинет</a>
+                    </div>
+                </div>
+        
+                <div class="header-search">
+                    <button class="js-search-opener header__button header-search__opener" type="button" title="Поиск">
+                        <svg aria-hidden="true">
+                            <use xlink:href="images/sprite.svg#search" />
+                        </svg>
+                    </button>
+        
+                    <div class="header-search__form-block">
+                        <form class="header-search__form" action="">
+                            <input class="header-search__input" type="text" value="" name="q" placeholder="Найти товар" autocomplete="off">
+                            <button class="header-search__submit" type="submit" title="Найти">
+                                <svg aria-hidden="true">
+                                    <use xlink:href="images/sprite.svg#search" />
+                                </svg>
+                            </button>
+                        </form>
+                    </div>
+                </div>
+        
+                <div class="header__logo" href="main.html" title="На главную">
+                    <svg aria-hidden="true">
+                        <use xlink:href="images/sprite.svg#logo_" />
+                    </svg>
+                    <span class="header__logo-text">магазин уличной одежды</span>
+                </div>
+        
+                <div class="header__links">
+                    <a class="header__link header__link--phone" href="tel:" title="Позвоните нам">
+                        <svg aria-hidden="true">
+                            <use xlink:href="images/sprite.svg#phone" />
+                        </svg>
+                    </a>
+        
+                    <a class="header__link header__link--user" href="personal.html" title="Личный кабинет">
+                        <svg aria-hidden="true">
+                            <use xlink:href="images/sprite.svg#user" />
+                        </svg>
+                    </a>
+        
+                    <a class="header__link" href="wishlist.html" title="Избранное">
+                        <svg aria-hidden="true">
+                            <use xlink:href="images/sprite.svg#favorite" />
+                        </svg>
+                    </a>
+        
+                    <a class="header__link" href="cart.html" title="Корзина">
+                        <svg aria-hidden="true">
+                            <use xlink:href="images/sprite.svg#cart" />
+                        </svg>
+                        <span class="cart-qnt">10</span>
+                    </a>
+                </div>
+            </div>
+        </header>
+
+        <main>
+            <div class="container">
+                <section class="blog-detail">
+                    <picture class="full-page-banner">
+                        <source srcset="images/content/blog_banner.jpg, images/content/blog_banner@2x.jpg 2x" media="(min-width: 768px)">
+                        <img src="images/content/blog_banner_mob.jpg" srcset="images/content/blog_banner_mob@2x.jpg 2x" alt="">
+                    </picture>
+
+                    <div class="blog-detail__inner">
+                        <p class="blog-detail__rubric">Рубрика</p>
+
+                        <h1 class="blog-detail__title">Virgil Abloh Says Streetwear Will “Die” in the 2020s. The streetwear king claims the future is in vintage.</h1>
+
+                        <p class="blog-detail__date">Автор: Михаил Иванов<br> 12 марта 2024 / 1522 просмотра</p>
+
+                        <p>In March 2023, I inadvertently set off a mini-firestorm by humbly positing that Supreme is dead. But I didn't mean to actually sound the death knell: I only meant to quantify
+                            Supreme's standing in today's streetwear scene.</p>
+
+                        <p>Supreme had simply become too big to still be cool and thus was, in streetwear parlance, "dead." Between declining cultural relevance, potent challengers, unsold product and a sense of encroaching corporatization, I saw
+                            that
+                            Supreme was no longer sitting comfortable at the forefront of streetwear as we know it. And, beyond the wave of publications that followed my lead, my thesis was only proven more correct over time.
+                            Months after my initial article was published, Supreme parent company VF Corporation divulged underwhelming revenue, including a multi-million dollar slip at Supreme. Then, new Supreme creative director Tremaine Emory
+                            departed
+                            amidst much controversy, alleging systemic racism.</p>
+
+                        <p>All the while, Supreme was aggressively expanding like it never had before, presumably to meet corporate demand: Shanghai, South Korea, Chicago and Berlin all received Supreme flagship stores within two years, the former
+                            three
+                            within the past 12 months alone. Previously, Supreme only opened a new store every half-decade or so.</p>
+
+                        <div class="js-single-slider single-slider swiper">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <a href="images/content/detail/img_1@2x.jpg" data-fancybox="images">
+                                        <img src="images/content/detail/img_1.jpg" srcset="images/content/detail/img_1@2x.jpg" alt="">
+                                    </a>
+                                </div>
+                                <div class="swiper-slide">
+                                    <a href="images/content/detail/img_2@2x.jpg" data-fancybox="images">
+                                        <img src="images/content/detail/img_2.jpg" srcset="images/content/detail/img_2@2x.jpg" alt="">
+                                    </a>
+                                </div>
+                                <div class="swiper-slide">
+                                    <a href="images/content/detail/img_3@2x.jpg" data-fancybox="images">
+                                        <img src="images/content/detail/img_3.jpg" srcset="images/content/detail/img_3@2x.jpg" alt="">
+                                    </a>
+                                </div>
+                                <div class="swiper-slide">
+                                    <a href="images/content/detail/img_4@2x.jpg" data-fancybox="images">
+                                        <img src="images/content/detail/img_4.jpg" srcset="images/content/detail/img_4@2x.jpg" alt="">
+                                    </a>
+                                </div>
+                                <div class="swiper-slide">
+                                    <a href="images/content/detail/img_5@2x.jpg" data-fancybox="images">
+                                        <img src="images/content/detail/img_5.jpg" srcset="images/content/detail/img_5@2x.jpg" alt="">
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="swiper-pagination"></div>
+                        </div>
+
+                        <p>From an outsider's perspective, it looked a lot like the formerly taciturn Supreme attempting to make up for lost time, a frantic bid to both assert dominance and move in on turf claimed by young upstart designers who had
+                            since
+                            nibbled heartily into Supreme's once-outsized slice of the streetwear pie.
+                        </p>
+
+                        <p>A recipe for concern, in other words</p>
+                    </div>
+                </section>
+
+                <section>
+                    <h2 class="page__title">Рекомендации</h2>
+
+                    <div class="js-recommendations recommendations swiper">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <div class="product">
+                                    <span class="product__status">NEW</span>
+
+                                    <button class="product__fav is-added" type="button" title="Убрать из избранного">
+                                        <svg aria-hidden="true">
+                                            <use xlink:href="images/sprite.svg#favorite_stroke" />
+                                        </svg>
+                                    </button>
+
+                                    <a class="product__link" href="#">
+                                        <span class="product__image">
+                                            <img src="images/content/img_7.jpg" srcset="images/content/img_7@2x.jpg" alt="">
+                                            <span class="product__sizes">
+                                                <span class="product__sizes-title">SIZE</span>
+                                                <span class="product__sizes-list">
+                                                    <span>xs</span>
+                                                    <span>s</span>
+                                                    <span>m</span>
+                                                    <span>l</span>
+                                                    <span>xl</span>
+                                                    <span>xxl</span>
+                                                </span>
+                                            </span>
+                                        </span>
+                                        <span class="product__title">Футболка Anteater Tee</span>
+                                        <span class="product__price-block">
+                                            <span class="product__price">1799 rub</span>
+                                            <span class="product__price-old"><s>1799</s> rub</span>
+                                        </span>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="product">
+                                    <span class="product__status">NEW</span>
+
+                                    <button class="product__fav is-added" type="button" title="Убрать из избранного">
+                                        <svg aria-hidden="true">
+                                            <use xlink:href="images/sprite.svg#favorite_stroke" />
+                                        </svg>
+                                    </button>
+
+                                    <a class="product__link" href="#">
+                                        <span class="product__image">
+                                            <img src="images/content/img_7.jpg" srcset="images/content/img_7@2x.jpg" alt="">
+                                            <span class="product__sizes">
+                                                <span class="product__sizes-title">SIZE</span>
+                                                <span class="product__sizes-list">
+                                                    <span>xs</span>
+                                                    <span>s</span>
+                                                    <span>m</span>
+                                                    <span>l</span>
+                                                    <span>xl</span>
+                                                    <span>xxl</span>
+                                                </span>
+                                            </span>
+                                        </span>
+                                        <span class="product__title">Футболка Anteater Tee</span>
+                                        <span class="product__price-block">
+                                            <span class="product__price">1799 rub</span>
+                                            <span class="product__price-old"><s>1799</s> rub</span>
+                                        </span>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="product">
+                                    <span class="product__status">NEW</span>
+
+                                    <button class="product__fav is-added" type="button" title="Убрать из избранного">
+                                        <svg aria-hidden="true">
+                                            <use xlink:href="images/sprite.svg#favorite_stroke" />
+                                        </svg>
+                                    </button>
+
+                                    <a class="product__link" href="#">
+                                        <span class="product__image">
+                                            <img src="images/content/img_7.jpg" srcset="images/content/img_7@2x.jpg" alt="">
+                                            <span class="product__sizes">
+                                                <span class="product__sizes-title">SIZE</span>
+                                                <span class="product__sizes-list">
+                                                    <span>xs</span>
+                                                    <span>s</span>
+                                                    <span>m</span>
+                                                    <span>l</span>
+                                                    <span>xl</span>
+                                                    <span>xxl</span>
+                                                </span>
+                                            </span>
+                                        </span>
+                                        <span class="product__title">Футболка Anteater Tee</span>
+                                        <span class="product__price-block">
+                                            <span class="product__price">1799 rub</span>
+                                            <span class="product__price-old"><s>1799</s> rub</span>
+                                        </span>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="product">
+                                    <span class="product__status">NEW</span>
+
+                                    <button class="product__fav is-added" type="button" title="Убрать из избранного">
+                                        <svg aria-hidden="true">
+                                            <use xlink:href="images/sprite.svg#favorite_stroke" />
+                                        </svg>
+                                    </button>
+
+                                    <a class="product__link" href="#">
+                                        <span class="product__image">
+                                            <img src="images/content/img_7.jpg" srcset="images/content/img_7@2x.jpg" alt="">
+                                            <span class="product__sizes">
+                                                <span class="product__sizes-title">SIZE</span>
+                                                <span class="product__sizes-list">
+                                                    <span>xs</span>
+                                                    <span>s</span>
+                                                    <span>m</span>
+                                                    <span>l</span>
+                                                    <span>xl</span>
+                                                    <span>xxl</span>
+                                                </span>
+                                            </span>
+                                        </span>
+                                        <span class="product__title">Футболка Anteater Tee</span>
+                                        <span class="product__price-block">
+                                            <span class="product__price">1799 rub</span>
+                                            <span class="product__price-old"><s>1799</s> rub</span>
+                                        </span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <button class="swiper-button-prev" type="button">
+                            <svg aria-hidden="true">
+                                <use xlink:href="images/sprite.svg#chevron_left" />
+                            </svg>
+                        </button>
+                        <button class="swiper-button-next" type="button">
+                            <svg aria-hidden="true">
+                                <use xlink:href="images/sprite.svg#chevron_right" />
+                            </svg>
+                        </button>
+                    </div>
+                </section>
+            </div>
+        </main>
+    </div>
+
+    <footer class="footer">
+        <div class="footer__inner container">
+            <div class="footer__logo">
+                <img src="images/_logo.svg" alt="CREAM магазин уличной одежды">
+                <span class="footer__logo-text">магазин уличной одежды</span>
+            </div>
+    
+            <div class="footer__menu">
+                <ul class="footer-menu">
+                    <li class="footer-menu__title">Магазин</li>
+                    <li class="footer-menu__item"><a href="#">Одежда</a></li>
+                    <li class="footer-menu__item"><a href="#">Аксессуары</a></li>
+                    <li class="footer-menu__item"><a href="#">Новинки</a></li>
+                    <li class="footer-menu__item"><a href="#">Распродажа</a></li>
+                </ul>
+    
+                <ul class="footer-menu">
+                    <li class="footer-menu__title">Компания</li>
+                    <li class="footer-menu__item"><a href="about.html">О нас</a></li>
+                    <li class="footer-menu__item"><a href="contacts.html">Контакты</a></li>
+                    <li class="footer-menu__item"><a href="offer.html">Оферта</a></li>
+                    <li class="footer-menu__item"><a href="policy.html">Политика конфиденциальности</a></li>
+                </ul>
+    
+                <ul class="footer-menu">
+                    <li class="footer-menu__title">Покупателям</li>
+                    <li class="footer-menu__item"><a href="#">Возврат</a></li>
+                    <li class="footer-menu__item"><a href="#">Оплата и доставка</a></li>
+                    <li class="footer-menu__item"><a href="#">Вопросы</a></li>
+                    <li class="footer-menu__item"><a href="#">Размерная сетка</a></li>
+                </ul>
+    
+                <ul class="footer-menu">
+                    <li class="footer-menu__title">Контакты</li>
+                    <li class="footer-menu__item"><a href="tel:+78126010710">8 (812) 601-0710</a></li>
+                    <li class="footer-menu__item"><a href="mailto:creamshop@mail.ru">creamshop@mail.ru</a></li>
+                </ul>
+            </div>
+    
+            <div class="footer__bottom">
+                <p>© 2008-2023 CREAMSHOP. All rights reserved.</p>
+                <a href="policy.html">Privacy Policy</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/swiper-bundle.min.js"></script>
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>

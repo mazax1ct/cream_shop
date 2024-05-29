@@ -49,6 +49,15 @@ $(document).ready(function() {
       }
     });
   }
+
+  if($('.js-single-slider').length) {
+    const singleSlider = new Swiper('.js-single-slider', {
+      loop: true,
+      pagination: {
+        el: '.swiper-pagination',
+      }
+    });
+  }
 });
 
 //перезапуск функции навешивания класса на шапку при скролле и ресайзе
