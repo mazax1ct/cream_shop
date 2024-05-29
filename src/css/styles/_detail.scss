@@ -220,14 +220,15 @@
         margin-bottom: 20px;
         text-transform: uppercase;
         @media(min-width: $hd) {
-            font-size: 36px;
-            margin-bottom: 30px;
+            font-size: 32px;
+            margin-bottom: 10px;
         }
     }
 
     &__articul {
         font-size: 12px;
         font-weight: 300;
+        margin-bottom: 30px;
         @media(min-width: $sm) {
             font-size: 14px;
         }
@@ -328,12 +329,19 @@
             clip: rect(0 0 0 0);
             width: 1px;
 
-            &:checked ~ .detail__size-text {
-                text-decoration: underline;
+            &:checked {
+                &:not(:disabled) {
+                    & ~ .detail__size-text {
+                        text-decoration: underline;
+                        font-weight: 900;
+                        color: var(--black);
+                    }
+                }
             }
 
             &:not(:disabled) ~ .detail__size-text {
                 cursor: pointer;
+                color: rgba(0, 0, 0, .5);
             }
 
             &:disabled ~ .detail__size-text {

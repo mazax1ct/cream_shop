@@ -47,7 +47,7 @@
         font-size: 36px;
         width: 100%;
         @media(min-width: $sm) {
-            font-size: 60px;
+            font-size: 50px;
             margin-bottom: 50px;
         }
         @media(min-width: $hd) {
@@ -129,15 +129,7 @@
         }
     }
 
-    &__section {
-        /*margin-bottom: 30px;
-        @media(min-width: $sm) {
-            margin-bottom: 40px;
-        }
-        @media(min-width: $fhd) {
-            margin-bottom: 60px;
-        }*/
-    }
+    &__section {}
 
     &__section-inner {
         display: none;
@@ -244,9 +236,15 @@
                 padding-left: var(--container_padding);
                 padding-right: var(--container_padding);
                 overflow-x: auto;
+                -ms-overflow-style: none;
+                scrollbar-width: none;
             }
             @media(min-width: $hd) {
                 width: 80%;
+            }
+
+            &::-webkit-scrollbar {
+                display: none;
             }
 
             .filter-link {
@@ -637,18 +635,12 @@
     @media(min-width: $fhd) {
         font-size: 20px;
     }
-    @include hover {
-        .product__image {
-            &::after {
-                opacity: 1;
-            }
-        }
 
+    &:hover {
         .product__sizes {
-            transform: translateY(0);
-            @media(min-width: $hd) {
-                transform: translateY(0);
-            }
+            opacity: 0.6;
+            visibility: visible;
+            transition-delay: 0s;
         }
     }
 
@@ -721,13 +713,13 @@
 
     &__image {
         display: block;
-        margin-bottom: 5px;
+        margin-bottom: 10px;
         overflow: hidden;
         position: relative;
         width: 100%;
         z-index: 1;
         @media(min-width: $fhd) {
-            margin-bottom: 15px;
+            margin-bottom: 10px;
         }
 
         img {
@@ -737,32 +729,20 @@
             display: block;
             width: 100%;
         }
-
-        &::after {
-            background-color: rgba(0,0,0,0.4);
-            content: '';
-            height: 100%;
-            left: 0;
-            opacity: 0;
-            position: absolute;
-            top: 0;
-            transition: opacity 0.3s;
-            width: 100%;
-            z-index: 1;
-        }
     }
 
     &__sizes {
-        background-color: rgba(255,255,255,0.83);
+        background-color: rgba(255,255,255,0.9);
         bottom: 5px;
         font-size: 10px;
         left: 5px;
         position: absolute;
-        padding: 10px 20px;
+        padding: 10px;
         right: 5px;
         top: auto;
-        transition: transform 0.3s;
-        transform: translateY(calc(100% + 10px));
+        opacity: 0;
+        visibility: hidden;
+        transition: opacity 0.3s, visibility 0s linear 0.3s;
         text-transform: uppercase;
         z-index: 2;
         @media(min-width: $sm) {
@@ -775,17 +755,16 @@
             left: 14px;
             padding: 30px 40px;
             right: 14px;
-            transform: translateY(calc(100% + 20px));
         }
     }
 
     &__sizes-title {
-        color: rgba(0,0,0,0.54);
+        color: rgba(0,0,0,0.84);
         display: block;
         margin-bottom: 5px;
         text-align: center;
         @media(min-width: $hd) {
-            margin-bottom: 20px;
+            margin-bottom: 10px;
         }
     }
 
@@ -794,10 +773,10 @@
         display: flex;
         flex-wrap: wrap;
         font-weight: 500;
-        gap: 10px 20px;
+        gap: 10px;
         justify-content: center;
         @media(min-width: $hd) {
-            gap: 10px 30px;
+            gap: 10px 20px;
         }
     }
 
@@ -821,11 +800,11 @@
     overflow: hidden;
 
     a {
-        @include hover {
+        /*@include hover {
             img {
                 transform: scale(1.02);
             }
-        }
+        }*/
     }
 
     a,
@@ -838,7 +817,7 @@
     img {
         object-position: center;
         object-fit: cover;
-        transform: scale(1);
-        transition: transform 0.3s;
+        /*transform: scale(1);
+        transition: transform 0.3s;*/
     }
 }

@@ -38,14 +38,14 @@
     &__logo {
         display: block;
         margin-bottom: 45px;
-        margin-left: auto;
+        margin-left: 0;
         margin-right: auto;
-        max-width: 300px;
+        max-width: 450px;
         @media(min-width: $xs) {
             margin-bottom: 35px;
         }
         @media(min-width: $sm) {
-            max-width: 316px;
+            max-width: 474px;
             margin-left: 0;
             margin-right: 0;
             margin-bottom: 55px;
@@ -55,7 +55,11 @@
         }
         @media(min-width: $hd) {
             margin-bottom: 0;
-            max-width: 185px;
+            max-width: 277px;
+        }
+
+        img {
+            height: 135px;
         }
     }
 
@@ -109,6 +113,13 @@
 
         p {
             margin-bottom: 0;
+            text-align: center;
+            width: 100%;
+
+            img {
+                max-width: 400px;
+                margin-bottom: 10px;
+            }
         }
 
         a {
@@ -164,6 +175,11 @@
             @media(min-width: $md) {
                 margin-bottom: 20px;
             }
+        }
+
+        img {
+            max-width: 40px;
+            margin-right: 10px;
         }
     }
 
